@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4pxhfkmdxc6t"
-path="res://.godot/imported/medieval_spritesheet.png-6fe14925b6800ac666616cfed75602c7.ctex"
+path="res://.godot/imported/medieval_spritesheet.png-d425cdd3c96ba8dedc1d6b23eb2edc8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_platformer-pack-medieval/Spritesheet/medieval_spritesheet.png"
-dest_files=["res://.godot/imported/medieval_spritesheet.png-6fe14925b6800ac666616cfed75602c7.ctex"]
+source_file="res://assets/levels/kenney_platformer-pack-medieval/Spritesheet/medieval_spritesheet.png"
+dest_files=["res://.godot/imported/medieval_spritesheet.png-d425cdd3c96ba8dedc1d6b23eb2edc8f.ctex"]
 
 [params]
 

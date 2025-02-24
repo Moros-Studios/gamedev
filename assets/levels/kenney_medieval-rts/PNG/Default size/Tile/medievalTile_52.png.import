@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dra8smsr4xxjd"
-path="res://.godot/imported/medievalTile_52.png-191ca9b440ea6905ec0148c466ab3aa2.ctex"
+path="res://.godot/imported/medievalTile_52.png-c6083d214b3a7693b99f3ca139dac484.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_medieval-rts/PNG/Default size/Tile/medievalTile_52.png"
-dest_files=["res://.godot/imported/medievalTile_52.png-191ca9b440ea6905ec0148c466ab3aa2.ctex"]
+source_file="res://assets/levels/kenney_medieval-rts/PNG/Default size/Tile/medievalTile_52.png"
+dest_files=["res://.godot/imported/medievalTile_52.png-c6083d214b3a7693b99f3ca139dac484.ctex"]
 
 [params]
 

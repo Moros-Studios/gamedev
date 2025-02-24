@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tm6og4prlya3"
-path="res://.godot/imported/Preview_KenneyNL.png-020d274cd38ff89fbbfbbdd50494add7.ctex"
+path="res://.godot/imported/Preview_KenneyNL.png-a657fdd6b0dae878612913e2cec84e26.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_medieval-rts/Preview_KenneyNL.png"
-dest_files=["res://.godot/imported/Preview_KenneyNL.png-020d274cd38ff89fbbfbbdd50494add7.ctex"]
+source_file="res://assets/levels/kenney_medieval-rts/Preview_KenneyNL.png"
+dest_files=["res://.godot/imported/Preview_KenneyNL.png-a657fdd6b0dae878612913e2cec84e26.ctex"]
 
 [params]
 

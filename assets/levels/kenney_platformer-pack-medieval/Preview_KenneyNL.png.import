@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://co21jb3piy2jc"
-path="res://.godot/imported/Preview_KenneyNL.png-c1876291ca25b0d2f28a84cdeeea4141.ctex"
+path="res://.godot/imported/Preview_KenneyNL.png-27011082d534b260d082db4333894ea3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_platformer-pack-medieval/Preview_KenneyNL.png"
-dest_files=["res://.godot/imported/Preview_KenneyNL.png-c1876291ca25b0d2f28a84cdeeea4141.ctex"]
+source_file="res://assets/levels/kenney_platformer-pack-medieval/Preview_KenneyNL.png"
+dest_files=["res://.godot/imported/Preview_KenneyNL.png-27011082d534b260d082db4333894ea3.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7doycr5uk68t"
-path="res://.godot/imported/medievalRTS_spritesheet@2.png-9f4845239f0d6b452b038c63c58c43a4.ctex"
+path="res://.godot/imported/medievalRTS_spritesheet@2.png-00eb4ac28b6d7bb1e6e905977305b6a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_medieval-rts/Spritesheet/medievalRTS_spritesheet@2.png"
-dest_files=["res://.godot/imported/medievalRTS_spritesheet@2.png-9f4845239f0d6b452b038c63c58c43a4.ctex"]
+source_file="res://assets/levels/kenney_medieval-rts/Spritesheet/medievalRTS_spritesheet@2.png"
+dest_files=["res://.godot/imported/medievalRTS_spritesheet@2.png-00eb4ac28b6d7bb1e6e905977305b6a1.ctex"]
 
 [params]
 

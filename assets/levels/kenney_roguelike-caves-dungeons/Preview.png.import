@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1tveij8o1cqc"
-path="res://.godot/imported/Preview.png-c86b183972bee861a48c67404ea418b1.ctex"
+path="res://.godot/imported/Preview.png-e74acb08a4e5cb6841314ee33b3da0a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_roguelike-caves-dungeons/Preview.png"
-dest_files=["res://.godot/imported/Preview.png-c86b183972bee861a48c67404ea418b1.ctex"]
+source_file="res://assets/levels/kenney_roguelike-caves-dungeons/Preview.png"
+dest_files=["res://.godot/imported/Preview.png-e74acb08a4e5cb6841314ee33b3da0a1.ctex"]
 
 [params]
 

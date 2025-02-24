@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj60xe8if48cc"
-path="res://.godot/imported/medievalStructure_17.png-0366120fd5a3acf4c4f9000209672867.ctex"
+path="res://.godot/imported/medievalStructure_17.png-c3219ec3df35770cd714a214f7e71d5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_medieval-rts/PNG/Retina/Structure/medievalStructure_17.png"
-dest_files=["res://.godot/imported/medievalStructure_17.png-0366120fd5a3acf4c4f9000209672867.ctex"]
+source_file="res://assets/levels/kenney_medieval-rts/PNG/Retina/Structure/medievalStructure_17.png"
+dest_files=["res://.godot/imported/medievalStructure_17.png-c3219ec3df35770cd714a214f7e71d5c.ctex"]
 
 [params]
 

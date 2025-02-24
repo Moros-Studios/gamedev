@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct53bgek33ynj"
-path="res://.godot/imported/medieval_tilesheet.png-414a5cdbeaa6bd1ec9b8a93e575bdbb3.ctex"
+path="res://.godot/imported/medieval_tilesheet.png-9b1173984cca3364a2da20a7a5b1a9bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_medieval-rts/Tilesheet/medieval_tilesheet.png"
-dest_files=["res://.godot/imported/medieval_tilesheet.png-414a5cdbeaa6bd1ec9b8a93e575bdbb3.ctex"]
+source_file="res://assets/levels/kenney_medieval-rts/Tilesheet/medieval_tilesheet.png"
+dest_files=["res://.godot/imported/medieval_tilesheet.png-9b1173984cca3364a2da20a7a5b1a9bd.ctex"]
 
 [params]
 

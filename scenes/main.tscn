@@ -1,7 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://b35svq8q1w310"]
+[gd_scene load_steps=4 format=3 uid="uid://b35svq8q1w310"]
 
-[ext_resource type="PackedScene" uid="uid://7vlictc05s4e" path="res://scenes/ui/main_menu.tscn" id="1_hgros"]
+[ext_resource type="PackedScene" uid="uid://duhc3jhcpcgg3" path="res://scenes/ui/menu_trial.tscn" id="1_q7s61"]
+[ext_resource type="PackedScene" uid="uid://bds02spby8vgp" path="res://scenes/player/Player.tscn" id="2_mlop3"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3vv6p"]
+normal = Vector2(-0.012499, -0.999922)
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Main Menu" parent="." instance=ExtResource("1_hgros")]
+[node name="Node2D" parent="." instance=ExtResource("1_q7s61")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_mlop3")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, 160)
+shape = SubResource("WorldBoundaryShape2D_3vv6p")

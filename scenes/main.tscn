@@ -3,8 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d36gjjg1nospc" path="res://scenes/levels/level_trial.tscn" id="1_7vu5v"]
 [ext_resource type="PackedScene" uid="uid://bds02spby8vgp" path="res://scenes/player/Player.tscn" id="2_mlop3"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3vv6p"]
-normal = Vector2(-0.012499, -0.999922)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5psrt"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -12,13 +11,14 @@ normal = Vector2(-0.012499, -0.999922)
 position = Vector2(17, 24)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_mlop3")]
-position = Vector2(4, -21)
+position = Vector2(4, -31)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position = Vector2(-3, 46)
+zoom = Vector2(2, 2)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(29, 22)
-shape = SubResource("WorldBoundaryShape2D_3vv6p")
+position = Vector2(1, 42)
+shape = SubResource("WorldBoundaryShape2D_5psrt")

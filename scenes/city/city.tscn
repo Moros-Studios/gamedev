@@ -9497,16 +9497,23 @@ script = ExtResource("3_odthu")
 
 [node name="Blacksmith" parent="Houses" instance=ExtResource("5_8qd41")]
 position = Vector2(859, 371)
-repair_cost = 200
+repair_cost = 500
 
 [node name="General Store" parent="Houses" instance=ExtResource("4_2nfrd")]
 position = Vector2(1061, 374)
+repair_cost = 300
 
 [node name="Training Center" parent="Houses" instance=ExtResource("6_0uesa")]
 position = Vector2(866, 726)
+repair_cost = 600
 
 [node name="Unlockables" type="Node2D" parent="."]
 script = ExtResource("3_3443a")
+buildings_to_unlock = {
+"House 3": PackedStringArray("../Houses/General Store"),
+"House 4": PackedStringArray("../Houses/Blacksmith"),
+"House 5": PackedStringArray("../Houses/Training Center")
+}
 
 [node name="House 1" type="Area2D" parent="Unlockables"]
 position = Vector2(278, 457)
@@ -9539,7 +9546,7 @@ shape = SubResource("RectangleShape2D_qvd3e")
 [node name="House 3" type="Area2D" parent="Unlockables"]
 position = Vector2(1079, 457)
 script = ExtResource("4_4tn13")
-cost = 400
+cost = 200
 
 [node name="Polygon2D" type="Polygon2D" parent="Unlockables/House 3"]
 color = Color(0.0431373, 0.0431373, 0.0431373, 0.67451)
@@ -9552,6 +9559,7 @@ shape = SubResource("RectangleShape2D_qvd3e")
 [node name="House 4" type="Area2D" parent="Unlockables"]
 position = Vector2(775, 457)
 script = ExtResource("4_4tn13")
+cost = 200
 
 [node name="Polygon2D" type="Polygon2D" parent="Unlockables/House 4"]
 color = Color(0.0431373, 0.0431373, 0.0431373, 0.67451)
@@ -9564,6 +9572,7 @@ shape = SubResource("RectangleShape2D_qvd3e")
 [node name="House 5" type="Area2D" parent="Unlockables"]
 position = Vector2(775, 699)
 script = ExtResource("4_4tn13")
+cost = 200
 
 [node name="Polygon2D" type="Polygon2D" parent="Unlockables/House 5"]
 color = Color(0.0431373, 0.0431373, 0.0431373, 0.67451)

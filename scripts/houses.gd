@@ -1,7 +1,7 @@
 extends Node2D
 class_name HousesManager
 
-@export var starting_money: int = 1000
+@export var starting_money: int = 100000
 var current_money: int
 
 signal money_changed(amount: int)
@@ -24,9 +24,12 @@ func _on_house_input_event(_viewport, event, _shape_idx, house_area: Area2D):
 		attempt_repair(house_area)
 
 func attempt_repair(house_area: Area2D):
-	# Check if the house is already repaired
-	if house_area.repaired:
-		print("This house is already repaired!")
+	# First check if the house can be repaired (is it unlocked?)
+	if not house_area.can_be_repaired():
+		if not house_area.unlocked:
+			print("This area is locked! You need to unlock it first.")
+		elif house_area.repaired:
+			print("This house is already repaired!")
 		return
 		
 	# Now use the house's specific repair cost

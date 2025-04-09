@@ -1,28 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://b35svq8q1w310"]
+[gd_scene load_steps=2 format=3 uid="uid://b35svq8q1w310"]
 
-[ext_resource type="PackedScene" uid="uid://d36gjjg1nospc" path="res://scenes/levels/level_trial.tscn" id="1_7vu5v"]
-[ext_resource type="PackedScene" uid="uid://bds02spby8vgp" path="res://scenes/player/Player.tscn" id="2_mlop3"]
 [ext_resource type="PackedScene" uid="uid://dyid8mogk67rm" path="res://scenes/city/city.tscn" id="3_iis57"]
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5psrt"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Level_Trial" parent="." instance=ExtResource("1_7vu5v")]
-position = Vector2(17, 24)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-visible = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1, 42)
-shape = SubResource("WorldBoundaryShape2D_5psrt")
-
 [node name="City" parent="." instance=ExtResource("3_iis57")]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_mlop3")]
-visible = false
-position = Vector2(4, -31)
-
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="City"]
 position = Vector2(960, 540)
+zoom = Vector2(0.8, 0.8)

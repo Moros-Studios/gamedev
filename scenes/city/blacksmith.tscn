@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://tjr2agei4ucq"]
+
+[ext_resource type="Script" path="res://scripts/repair_building.gd" id="1_a344l"]
+[ext_resource type="Texture2D" uid="uid://bqlx12lhqp24r" path="res://assets/levels/kenney_medieval-rts/PNG/Blacksmith.png" id="1_ggypg"]
+[ext_resource type="Texture2D" uid="uid://bj0fxe1kerp3b" path="res://assets/levels/kenney_medieval-rts/PNG/Blacksmith_Damaged.png" id="2_hpnln"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2yev"]
+size = Vector2(165, 92)
+
+[node name="Blacksmith" type="Area2D"]
+script = ExtResource("1_a344l")
+
+[node name="Repaired Building" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_ggypg")
+
+[node name="Demolished Building" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_hpnln")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -5)
+shape = SubResource("RectangleShape2D_l2yev")

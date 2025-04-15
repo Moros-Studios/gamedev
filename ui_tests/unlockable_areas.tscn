@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw6utapr7jbcc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h40lm"]
+size = Vector2(222, 111)
+
+[node name="Unlockable" type="Area2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.846213, 0.402376, 0.292833, 1)
+polygon = PackedVector2Array(-99, -57, -101, 50, 118, 52, 115, -22, 1, -17, -1, -56)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9, -2.5)
+shape = SubResource("RectangleShape2D_h40lm")

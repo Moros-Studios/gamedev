@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://sskdk88uqxvr"]
+
+[ext_resource type="Script" uid="uid://bcwli6cm1eqq4" path="res://repair_building.gd" id="1_ew12q"]
+[ext_resource type="Texture2D" uid="uid://ir4vq6g7rent" path="res://icon.svg" id="1_mlifl"]
+[ext_resource type="Texture2D" uid="uid://cgfi3qecyg8lm" path="res://alien-svgrepo-com.svg" id="1_on7vk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2hb1f"]
+size = Vector2(22.807, 23.2456)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_ew12q")
+
+[node name="Repaired Building" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1.12, 0.880003)
+scale = Vector2(0.0940502, 0.0940502)
+texture = ExtResource("1_on7vk")
+
+[node name="Demolished Building" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.119999, -0.119999)
+scale = Vector2(0.748125, 0.748125)
+texture = ExtResource("1_mlifl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.119999, -0.119999)
+scale = Vector2(4.56, 4.56)
+shape = SubResource("RectangleShape2D_2hb1f")

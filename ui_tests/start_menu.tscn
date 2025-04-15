@@ -1,0 +1,129 @@
+[gd_scene load_steps=7 format=3 uid="uid://cjac06fcm0n2y"]
+
+[ext_resource type="Theme" uid="uid://bjbpgkax6l26t" path="res://new_theme.tres" id="1_ctwoq"]
+[ext_resource type="Texture2D" uid="uid://8f4wela5ma36" path="res://Pause Menu.png" id="2_ppfnh"]
+[ext_resource type="Texture2D" uid="uid://ch7nkw5omgayd" path="res://kenney_ui-pack-rpg-expansion/PNG/panel_brown.png" id="3_7boi2"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qtu10"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ee4bf"]
+texture = ExtResource("2_ppfnh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xsckg"]
+texture = ExtResource("3_7boi2")
+texture_margin_left = 7.0
+texture_margin_top = 7.0
+texture_margin_right = 8.0
+texture_margin_bottom = 6.0
+region_rect = Rect2(0, 0, 100, 100)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_vertical_guides_ = [1152.0]
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_qtu10")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ctwoq")
+theme_override_styles/panel = SubResource("StyleBoxTexture_ee4bf")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.37
+anchor_top = 0.144
+anchor_right = 0.63
+anchor_bottom = 0.227
+offset_left = -0.23999
+offset_top = -0.312004
+offset_right = 0.239929
+offset_bottom = -0.0960083
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_xsckg")
+text = "MAIN MENU"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.266299
+anchor_top = 0.753247
+anchor_right = 0.440299
+anchor_bottom = 0.830247
+offset_left = 0.223969
+offset_top = -0.104004
+offset_right = -0.223999
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme = ExtResource("1_ctwoq")
+theme_override_font_sizes/font_size = 20
+text = "PLAY"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.552979
+anchor_top = 0.753
+anchor_right = 0.726979
+anchor_bottom = 0.83
+offset_left = -0.0320129
+offset_top = 0.0559998
+offset_right = -0.47998
+offset_bottom = 0.159973
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_ctwoq")
+theme_override_font_sizes/font_size = 20
+text = "SETTINGS"
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.277
+anchor_top = 0.147
+anchor_right = 0.73
+anchor_bottom = 0.852
+offset_left = 249.896
+offset_top = 32.744
+offset_right = 240.936
+offset_bottom = 31.904
+theme_override_constants/separation = 60
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.449653
+anchor_top = 0.884259
+anchor_right = 0.548646
+anchor_bottom = 0.956444
+offset_right = -0.0400085
+offset_bottom = 0.224
+theme = ExtResource("1_ctwoq")
+theme_override_font_sizes/font_size = 31
+text = "EXIT"
+metadata/_edit_use_anchors_ = true

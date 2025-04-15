@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://brwap5vuea1ie"]
+
+[ext_resource type="PackedScene" uid="uid://bfnim4uydotpd" path="res://unlockables.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dgtllh0ivwpu3" path="res://health.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://l1tyirn81gon" path="res://money.tscn" id="3_h2yge"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Unlockables" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(142, 220)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 327)
+zoom = Vector2(0.5, 0.5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("2_0xm2m")]
+anchors_preset = -1
+anchor_left = -1.0
+anchor_top = -1.0
+offset_left = 591.0
+offset_top = 338.0
+offset_right = -561.0
+offset_bottom = -310.0
+scale = Vector2(3, 3)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="Control" parent="CanvasLayer2" instance=ExtResource("3_h2yge")]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = -1.0
+anchor_right = 2.0
+anchor_bottom = 0.0
+offset_left = -280.0
+offset_top = 341.0
+offset_right = -1432.0
+offset_bottom = -307.0
+grow_horizontal = 0
+grow_vertical = 1
+scale = Vector2(3, 3)

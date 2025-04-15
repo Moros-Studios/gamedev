@@ -1,0 +1,171 @@
+[gd_scene load_steps=6 format=3 uid="uid://bfnim4uydotpd"]
+
+[ext_resource type="Script" uid="uid://dytslt8o37d2t" path="res://houses.gd" id="1_ud5po"]
+[ext_resource type="Script" uid="uid://c8j1il1fcrdo" path="res://unlockables.gd" id="1_ujjxb"]
+[ext_resource type="Script" uid="uid://buucwm65oswqf" path="res://building.gd" id="2_flvbc"]
+[ext_resource type="PackedScene" uid="uid://sskdk88uqxvr" path="res://actual_building.tscn" id="3_16voa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ujjxb"]
+
+[node name="City" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="Houses" type="Node2D" parent="."]
+script = ExtResource("1_ud5po")
+
+[node name="Area2D1" parent="Houses" instance=ExtResource("3_16voa")]
+position = Vector2(185, 99)
+repair_cost = 800
+
+[node name="Area2D2" parent="Houses" instance=ExtResource("3_16voa")]
+position = Vector2(682, 105)
+repair_cost = 500
+
+[node name="Unlockables" type="Node2D" parent="."]
+script = ExtResource("1_ujjxb")
+
+[node name="House 1" type="Area2D" parent="Unlockables"]
+scale = Vector2(18.64, 9.52)
+script = ExtResource("2_flvbc")
+
+[node name="Polygon2D" type="Polygon2D" parent="Unlockables/House 1"]
+color = Color(0.83433, 0.141003, 0.665673, 1)
+polygon = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+uv = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Unlockables/House 1"]
+position = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_ujjxb")
+
+[node name="House 2" type="Area2D" parent="Unlockables"]
+position = Vector2(477, 0)
+scale = Vector2(18.64, 9.52)
+script = ExtResource("2_flvbc")
+
+[node name="Hidden Object" type="ColorRect" parent="Unlockables/House 2"]
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 47.0
+offset_bottom = 47.0
+scale = Vector2(0.120001, 0.12)
+
+[node name="ColorRect" type="ColorRect" parent="Unlockables/House 2"]
+visible = false
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+color = Color(0.370194, 0.466174, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Polygon2D" type="Polygon2D" parent="Unlockables/House 2"]
+color = Color(0.83433, 0.141003, 0.665673, 1)
+polygon = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+uv = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Unlockables/House 2"]
+position = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_ujjxb")
+
+[node name="House 3" type="Area2D" parent="Unlockables"]
+position = Vector2(41, 288)
+scale = Vector2(18.64, 9.52)
+script = ExtResource("2_flvbc")
+
+[node name="Hidden Object" type="ColorRect" parent="Unlockables/House 3"]
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 47.0
+offset_bottom = 47.0
+scale = Vector2(0.120001, 0.12)
+
+[node name="ColorRect" type="ColorRect" parent="Unlockables/House 3"]
+visible = false
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+color = Color(0.370194, 0.466174, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Polygon2D" type="Polygon2D" parent="Unlockables/House 3"]
+color = Color(0.83433, 0.141003, 0.665673, 1)
+polygon = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+uv = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Unlockables/House 3"]
+position = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_ujjxb")
+
+[node name="House 4" type="Area2D" parent="Unlockables"]
+position = Vector2(524, 275)
+scale = Vector2(18.64, 9.52)
+script = ExtResource("2_flvbc")
+
+[node name="Hidden Object" type="ColorRect" parent="Unlockables/House 4"]
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 47.0
+offset_bottom = 47.0
+scale = Vector2(0.120001, 0.12)
+
+[node name="ColorRect" type="ColorRect" parent="Unlockables/House 4"]
+visible = false
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+color = Color(0.370194, 0.466174, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Polygon2D" type="Polygon2D" parent="Unlockables/House 4"]
+color = Color(0.83433, 0.141003, 0.665673, 1)
+polygon = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+uv = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Unlockables/House 4"]
+position = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_ujjxb")
+
+[node name="House 5" type="Area2D" parent="Unlockables"]
+position = Vector2(399, 542)
+scale = Vector2(18.64, 9.52)
+script = ExtResource("2_flvbc")
+
+[node name="Hidden Object" type="ColorRect" parent="Unlockables/House 5"]
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 47.0
+offset_bottom = 47.0
+scale = Vector2(0.120001, 0.12)
+
+[node name="ColorRect" type="ColorRect" parent="Unlockables/House 5"]
+visible = false
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+color = Color(0.370194, 0.466174, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Polygon2D" type="Polygon2D" parent="Unlockables/House 5"]
+color = Color(0.83433, 0.141003, 0.665673, 1)
+polygon = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+uv = PackedVector2Array(20.0107, 0, 20.0107, 20.063, 0, 19.958, 0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Unlockables/House 5"]
+position = Vector2(10, 10)
+shape = SubResource("RectangleShape2D_ujjxb")

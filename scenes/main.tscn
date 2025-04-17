@@ -1,11 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://b35svq8q1w310"]
+[gd_scene load_steps=3 format=3 uid="uid://b35svq8q1w310"]
 
+[ext_resource type="PackedScene" uid="uid://c7nly35ewn23c" path="res://addons/PackedUi/boot.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://dyid8mogk67rm" path="res://scenes/city/city.tscn" id="3_iis57"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="City" parent="." instance=ExtResource("3_iis57")]
+[node name="Boot" parent="." instance=ExtResource("1_0wfyh")]
 
-[node name="Camera2D" type="Camera2D" parent="City"]
+[node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
 zoom = Vector2(0.8, 0.8)
+
+[node name="City" parent="." instance=ExtResource("3_iis57")]

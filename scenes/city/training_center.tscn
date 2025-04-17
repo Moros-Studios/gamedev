@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c21iomngrxnaf"]
 
-[ext_resource type="Script" path="res://scripts/repair_building.gd" id="1_ygbm0"]
+[ext_resource type="Script" uid="uid://cdwakh5u3us7t" path="res://scripts/repair_building.gd" id="1_ygbm0"]
 [ext_resource type="Texture2D" uid="uid://djujhqvltsuy4" path="res://assets/levels/kenney_medieval-rts/PNG/Train.png" id="2_7e4kp"]
 [ext_resource type="Texture2D" uid="uid://wfapmuto0c73" path="res://assets/levels/kenney_medieval-rts/PNG/Train_Damaged.png" id="3_a3v4n"]
 

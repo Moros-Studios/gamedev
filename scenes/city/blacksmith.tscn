@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://tjr2agei4ucq"]
 
-[ext_resource type="Script" path="res://scripts/repair_building.gd" id="1_a344l"]
+[ext_resource type="Script" uid="uid://cdwakh5u3us7t" path="res://scripts/repair_building.gd" id="1_a344l"]
 [ext_resource type="Texture2D" uid="uid://bqlx12lhqp24r" path="res://assets/levels/kenney_medieval-rts/PNG/Blacksmith.png" id="1_ggypg"]
 [ext_resource type="Texture2D" uid="uid://bj0fxe1kerp3b" path="res://assets/levels/kenney_medieval-rts/PNG/Blacksmith_Damaged.png" id="2_hpnln"]
 

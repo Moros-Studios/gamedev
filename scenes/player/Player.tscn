@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://bds02spby8vgp"]
 
 [ext_resource type="Texture2D" uid="uid://dhc7xrt63l07j" path="res://assets/sprites/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Idle.png" id="1_63qiv"]
-[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_1018h"]
+[ext_resource type="Script" uid="uid://cu3kciwkk8dtw" path="res://scenes/player/player.gd" id="1_1018h"]
 [ext_resource type="Texture2D" uid="uid://cj6x6d2ilm1ye" path="res://assets/sprites/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Run.png" id="2_xc26p"]
 [ext_resource type="Texture2D" uid="uid://dgjg4ldrtgl7j" path="res://assets/sprites/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Jump.png" id="3_i5c54"]
 [ext_resource type="Texture2D" uid="uid://d2qyqurv5h3lw" path="res://assets/sprites/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_JumpFallInbetween.png" id="4_oy8rj"]

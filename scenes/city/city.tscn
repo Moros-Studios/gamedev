@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://ct53bgek33ynj" path="res://assets/levels/kenney_medieval-rts/Tilesheet/medieval_tilesheet.png" id="1_hgaji"]
 [ext_resource type="Texture2D" uid="uid://dqpwq55c3nlwa" path="res://assets/levels/kenney_medieval-rts/Tilesheet/medieval_tilesheet - Copy.png" id="2_rm1g8"]
-[ext_resource type="Script" path="res://scripts/unlockables.gd" id="3_3443a"]
-[ext_resource type="Script" path="res://scripts/houses.gd" id="3_odthu"]
+[ext_resource type="Script" uid="uid://wq43iss2voo8" path="res://scripts/unlockables.gd" id="3_3443a"]
+[ext_resource type="Script" uid="uid://c622eiqc4tnor" path="res://scripts/houses.gd" id="3_odthu"]
 [ext_resource type="PackedScene" uid="uid://cauwkbjmejge2" path="res://scenes/city/gen_store.tscn" id="4_2nfrd"]
-[ext_resource type="Script" path="res://scripts/unlock.gd" id="4_4tn13"]
+[ext_resource type="Script" uid="uid://cgsvsry22fb0e" path="res://scripts/unlock.gd" id="4_4tn13"]
 [ext_resource type="PackedScene" uid="uid://tjr2agei4ucq" path="res://scenes/city/blacksmith.tscn" id="5_8qd41"]
 [ext_resource type="PackedScene" uid="uid://c21iomngrxnaf" path="res://scenes/city/training_center.tscn" id="6_0uesa"]
 

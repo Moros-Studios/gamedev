@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bd3dj73fu4rt6"]
+[gd_scene load_steps=16 format=3 uid="uid://bd3dj73fu4rt6"]
 
 [ext_resource type="Script" uid="uid://bg5lb2kdignos" path="res://addons/PackedUi/Code/ui.gd" id="1_j1lf8"]
 [ext_resource type="Script" uid="uid://be5sm6qbc7ysx" path="res://addons/PackedUi/Code/main_menu.gd" id="2_dhl62"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://cmn4ds7brgvnu" path="res://addons/PackedUi/Code/popups.gd" id="9_y8v47"]
 [ext_resource type="Texture2D" uid="uid://ciphdoorlai41" path="res://addons/PackedUi/icon.svg" id="13_vydkj"]
 [ext_resource type="Texture2D" uid="uid://4fmfjwd7xr7l" path="res://addons/PackedUi/popup_icon_warning.png" id="14_8eegs"]
+[ext_resource type="Script" uid="uid://c8gcw151xvfm1" path="res://addons/PackedUi/Code/pick_game.gd" id="15_5aica"]
 
 [node name="Ui" type="CanvasLayer"]
 process_mode = 3
@@ -513,3 +514,11 @@ theme = ExtResource("3_ohvov")
 theme_type_variation = &"LargePopupButton"
 text = "Confirm
 "
+
+[node name="PickGame" type="Control" parent="." groups=["PickGame"]]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("15_5aica")

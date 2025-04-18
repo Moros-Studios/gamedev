@@ -41,6 +41,10 @@ unlock={
 ]
 }
 
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://scripts/dialogue/dialogue_test.dialogue")
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

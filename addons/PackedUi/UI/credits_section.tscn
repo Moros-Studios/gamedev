@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://q4omh0x04om6"]
 
-[ext_resource type="Script" uid="uid://b8dsqmqdlltoa" path="res://addons/PackedUi/Code/credits_section.gd" id="1_vsdrq"]
+[ext_resource type="Script" path="res://addons/PackedUi/Code/credits_section.gd" id="1_vsdrq"]
 [ext_resource type="Theme" uid="uid://cpqt1hqsijy37" path="res://addons/PackedUi/default_theme.tres" id="2_ehe2w"]
-[ext_resource type="Script" uid="uid://qmeylvt5ftui" path="res://addons/PackedUi/Code/wrappers/credits_rich_text_label.gd" id="3_i7v3l"]
+[ext_resource type="Script" path="res://addons/PackedUi/Code/wrappers/credits_rich_text_label.gd" id="3_i7v3l"]
 
 [node name="CreditsSection" type="VBoxContainer"]
 anchors_preset = 15

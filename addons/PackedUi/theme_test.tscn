@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b1sofyasa7ccd"]
 
-[ext_resource type="Script" uid="uid://qmeylvt5ftui" path="res://addons/PackedUi/Code/wrappers/credits_rich_text_label.gd" id="1_2o0cs"]
+[ext_resource type="Script" path="res://addons/PackedUi/Code/wrappers/credits_rich_text_label.gd" id="1_2o0cs"]
 [ext_resource type="Theme" uid="uid://cpqt1hqsijy37" path="res://addons/PackedUi/default_theme.tres" id="1_lwr20"]
 
 [node name="Theme Test" type="Control"]

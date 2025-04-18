@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://0abgeaqt4tdj"]
 
-[ext_resource type="Script" uid="uid://bcin4seqofuhc" path="res://addons/PackedUi/Code/wrappers/drop_down_option.gd" id="1_np7u5"]
+[ext_resource type="Script" path="res://addons/PackedUi/Code/wrappers/drop_down_option.gd" id="1_np7u5"]
 [ext_resource type="Theme" uid="uid://cpqt1hqsijy37" path="res://addons/PackedUi/default_theme.tres" id="2_p3j3b"]
 
 [node name="drop_down_option" type="Control"]

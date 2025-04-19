@@ -4,8 +4,8 @@ extends Control
 var timer = null
 
 func _ready():
-	print("Children of MessageDisplay:", get_children())
-	print("Does Label exist by path?", has_node("Label"))
+	print("Children of MessageDisplay: ", get_children())
+	print("Does Label exist by path? ", has_node("Label"))
 	#label = get_node("Label")
 	if label == null:
 		print("ERROR: Label node not found in MessageDisplay")

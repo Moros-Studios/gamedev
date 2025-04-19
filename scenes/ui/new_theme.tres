@@ -1,4 +1,6 @@
-[gd_resource type="Theme" load_steps=14 format=4 uid="uid://5c0frflud0pu"]
+[gd_resource type="Theme" load_steps=15 format=4 uid="uid://5c0frflud0pu"]
+
+[ext_resource type="Texture2D" uid="uid://dt4tpt581nvam" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0018.png" id="1_whg2x"]
 
 [sub_resource type="Image" id="Image_78ylj"]
 data = {
@@ -1170,7 +1172,13 @@ axis_stretch_horizontal = 2
 axis_stretch_vertical = 2
 modulate_color = Color(0.359975, 0.467731, 0.558193, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tool0"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xeg5u"]
+texture = ExtResource("1_whg2x")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+region_rect = Rect2(0, -0.00839055, 32, 32.0084)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aggjg"]
 
@@ -1201,6 +1209,8 @@ Button/styles/focus = SubResource("StyleBoxFlat_lyb8g")
 Button/styles/hover = SubResource("StyleBoxTexture_nft0o")
 Button/styles/normal = SubResource("StyleBoxTexture_nft0o")
 Button/styles/pressed = SubResource("StyleBoxTexture_78ylj")
-Label/styles/normal = SubResource("StyleBoxFlat_tool0")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 40
+Label/styles/normal = SubResource("StyleBoxTexture_xeg5u")
 ProgressBar/styles/fill = SubResource("StyleBoxTexture_aggjg")
 ProgressBar/styles/fill_end = SubResource("StyleBoxLine_nft0o")

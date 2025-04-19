@@ -1,0 +1,101 @@
+[gd_scene load_steps=13 format=3 uid="uid://l1tyirn81gon"]
+
+[ext_resource type="Theme" uid="uid://5c0frflud0pu" path="res://scenes/ui/new_theme.tres" id="1_hkxbf"]
+[ext_resource type="Texture2D" uid="uid://dbo010qdstwie" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0046.png" id="2_xf2lk"]
+[ext_resource type="Texture2D" uid="uid://rvtu6sjq3fas" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0047.png" id="3_iytp5"]
+[ext_resource type="Texture2D" uid="uid://b842r0ec3ujj8" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0059.png" id="4_uhawy"]
+[ext_resource type="Texture2D" uid="uid://cp5brxf8hsm43" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0060.png" id="5_nx7jh"]
+[ext_resource type="Texture2D" uid="uid://dbx3uux3yk008" path="res://scenes/ui/Coin.png" id="6_lkdjs"]
+[ext_resource type="Script" uid="uid://cnb7m8eh38t14" path="res://scripts/money_bar.gd" id="7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hkxbf"]
+bg_color = Color(0.103636, 0.151825, 0.179504, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0msl1"]
+texture = ExtResource("2_xf2lk")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nefbp"]
+texture = ExtResource("3_iytp5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ej4nw"]
+texture = ExtResource("4_uhawy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8js6y"]
+texture = ExtResource("5_nx7jh")
+
+[node name="MoneyBar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7")
+
+[node name="Panel5" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 25.0
+offset_right = 278.0
+offset_bottom = 57.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hkxbf")
+
+[node name="Panel" type="Panel" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = -2.0
+offset_top = 1.0
+offset_right = 38.0
+offset_bottom = 41.0
+theme = ExtResource("1_hkxbf")
+theme_override_styles/panel = SubResource("StyleBoxTexture_0msl1")
+metadata/_edit_group_ = true
+
+[node name="Panel2" type="Panel" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 38.0
+offset_top = 1.0
+offset_right = 78.0
+offset_bottom = 41.0
+theme = ExtResource("1_hkxbf")
+theme_override_styles/panel = SubResource("StyleBoxTexture_nefbp")
+metadata/_edit_group_ = true
+
+[node name="Panel3" type="Panel" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = -2.0
+offset_top = 41.0
+offset_right = 38.0
+offset_bottom = 81.0
+theme = ExtResource("1_hkxbf")
+theme_override_styles/panel = SubResource("StyleBoxTexture_ej4nw")
+metadata/_edit_group_ = true
+
+[node name="Panel4" type="Panel" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 38.0
+offset_top = 41.0
+offset_right = 78.0
+offset_bottom = 81.0
+theme = ExtResource("1_hkxbf")
+theme_override_styles/panel = SubResource("StyleBoxTexture_8js6y")
+metadata/_edit_group_ = true
+
+[node name="Coin" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(38, 41)
+scale = Vector2(2, 2)
+texture = ExtResource("6_lkdjs")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 29.0
+offset_right = 272.0
+offset_bottom = 52.0
+text = "0000"
+horizontal_alignment = 1
+vertical_alignment = 1

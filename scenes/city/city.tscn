@@ -9592,8 +9592,8 @@ position = Vector2(965, 538)
 zoom = Vector2(0.5, 0.5)
 
 [node name="MoneyBar" parent="." instance=ExtResource("9_ag3m0")]
-offset_left = 1511.0
-offset_top = -84.0
-offset_right = 1511.0
-offset_bottom = -84.0
+offset_left = 1235.0
+offset_top = 47.0
+offset_right = 1235.0
+offset_bottom = 47.0
 scale = Vector2(2, 2)

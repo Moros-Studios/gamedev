@@ -1,19 +1,21 @@
-[gd_scene load_steps=15 format=3 uid="uid://bd3dj73fu4rt6"]
+[gd_scene load_steps=17 format=3 uid="uid://bd3dj73fu4rt6"]
 
-[ext_resource type="Script" path="res://addons/PackedUi/Code/ui.gd" id="1_j1lf8"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/main_menu.gd" id="2_dhl62"]
+[ext_resource type="Script" uid="uid://dkiydfewvklas" path="res://addons/PackedUi/Code/ui.gd" id="1_j1lf8"]
+[ext_resource type="Script" uid="uid://boig3tajrupev" path="res://addons/PackedUi/Code/main_menu.gd" id="2_dhl62"]
 [ext_resource type="Theme" uid="uid://cpqt1hqsijy37" path="res://addons/PackedUi/default_theme.tres" id="3_ohvov"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/options_menu.gd" id="4_wx7w4"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/credits.gd" id="5_6nx8t"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/credits_section_data.gd" id="6_86k27"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/player_ui.gd" id="6_im37q"]
+[ext_resource type="Script" uid="uid://cvq1mj7rojot" path="res://addons/PackedUi/Code/options_menu.gd" id="4_wx7w4"]
+[ext_resource type="Script" uid="uid://dxjwl57yi3abi" path="res://addons/PackedUi/Code/credits.gd" id="5_6nx8t"]
+[ext_resource type="Script" uid="uid://c336ccgg7tji3" path="res://addons/PackedUi/Code/credits_section_data.gd" id="6_86k27"]
+[ext_resource type="Script" uid="uid://dh5mg0kadufm1" path="res://addons/PackedUi/Code/player_ui.gd" id="6_im37q"]
 [ext_resource type="Resource" uid="uid://cj8cddje77ep4" path="res://addons/PackedUi/Credit Datas/demo_data.tres" id="7_5cen7"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/pause_menu.gd" id="7_r3cjq"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/result_screen.gd" id="8_p1pvi"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/wrappers/toggle_ui_button.gd" id="9_xcvtp"]
-[ext_resource type="Script" path="res://addons/PackedUi/Code/popups.gd" id="9_y8v47"]
+[ext_resource type="Script" uid="uid://ccu2irhk22mg1" path="res://addons/PackedUi/Code/pause_menu.gd" id="7_r3cjq"]
+[ext_resource type="Script" uid="uid://dtydp0a51vq52" path="res://addons/PackedUi/Code/result_screen.gd" id="8_p1pvi"]
+[ext_resource type="Script" uid="uid://c0yfk2u3lvcwk" path="res://addons/PackedUi/Code/wrappers/toggle_ui_button.gd" id="9_xcvtp"]
+[ext_resource type="Script" uid="uid://vt7p7djkyjqn" path="res://addons/PackedUi/Code/popups.gd" id="9_y8v47"]
 [ext_resource type="Texture2D" uid="uid://ciphdoorlai41" path="res://addons/PackedUi/icon.svg" id="13_vydkj"]
 [ext_resource type="Texture2D" uid="uid://4fmfjwd7xr7l" path="res://addons/PackedUi/popup_icon_warning.png" id="14_8eegs"]
+[ext_resource type="Script" uid="uid://dibhi3nkl1g8m" path="res://addons/PackedUi/Code/cityscene.gd" id="15_5aica"]
+[ext_resource type="PackedScene" uid="uid://dyid8mogk67rm" path="res://scenes/city/city.tscn" id="16_nb1pa"]
 
 [node name="Ui" type="CanvasLayer"]
 process_mode = 3
@@ -38,16 +40,18 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_dhl62")
-game_title = "game_title"
-menu_options = Array[String](["Play", "Settings", "Credits"])
+menu_options = Array[String](["Play", "Credits"])
 background_color = Color(0.242052, 0.18342, 0.265668, 1)
 background = NodePath("background")
 id = "main_menu"
 
 [node name="background" type="ColorRect" parent="MainMenu"]
-layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 720.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.242052, 0.18342, 0.265668, 1)
 
 [node name="vbox1" type="VBoxContainer" parent="MainMenu"]
@@ -64,10 +68,12 @@ layout_mode = 2
 [node name="game_title_label" type="RichTextLabel" parent="MainMenu/vbox1"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
 theme = ExtResource("3_ohvov")
 bbcode_enabled = true
-text = "[center]Game Title Here[/center]"
+text = "[center]Medieval World Building Game[/center]"
 scroll_active = false
+horizontal_alignment = 1
 
 [node name="buttons_hbox" type="HBoxContainer" parent="MainMenu/vbox1"]
 unique_name_in_owner = true
@@ -97,13 +103,14 @@ size_flags_vertical = 0
 
 [node name="OptionsMenu" type="Control" parent="." node_paths=PackedStringArray("background") groups=["OptionsMenu"]]
 visible = false
-custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
-anchors_preset = 0
-offset_right = 1280.0
-offset_bottom = 720.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("4_wx7w4")
-menu_name = "settings_title"
+menu_name = "Settings"
 confirm_on_exit = true
 use_simple_audio_manager = false
 background_color = Color(0.390689, 0.491481, 0.64164, 1)
@@ -136,6 +143,7 @@ theme = ExtResource("3_ohvov")
 theme_type_variation = &"MenuTitle"
 bbcode_enabled = true
 text = "[center]title[/center]"
+horizontal_alignment = 1
 
 [node name="hbox" type="HBoxContainer" parent="OptionsMenu/vbox"]
 layout_mode = 2
@@ -195,19 +203,20 @@ text = "Back"
 
 [node name="Credits" type="Control" parent="." node_paths=PackedStringArray("background") groups=["Credits"]]
 visible = false
-custom_minimum_size = Vector2(1280, 720)
+custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1280.0
 offset_bottom = 720.0
 script = ExtResource("5_6nx8t")
 credit_sections = Array[ExtResource("6_86k27")]([ExtResource("7_5cen7")])
+set_position_of_buttons = false
 background_color = Color(0.131654, 0.250022, 0.218582, 1)
 background = NodePath("background")
 id = "credits"
 
 [node name="background" type="ColorRect" parent="Credits"]
-custom_minimum_size = Vector2(1280, 720)
+custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -215,7 +224,7 @@ color = Color(0.133333, 0.25098, 0.219608, 1)
 
 [node name="credits_scroll" type="ScrollContainer" parent="Credits"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(1280, 720)
+custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -239,6 +248,7 @@ custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme = ExtResource("3_ohvov")
 bbcode_enabled = true
+horizontal_alignment = 1
 
 [node name="spacer2" type="Control" parent="Credits/credits_scroll/credits_vbox"]
 custom_minimum_size = Vector2(0, 60)
@@ -247,13 +257,21 @@ layout_mode = 2
 [node name="back_btn" type="Button" parent="Credits"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(200, 0)
-layout_mode = 0
-offset_left = 1002.0
-offset_top = 624.0
-offset_right = 1202.0
-offset_bottom = 670.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.871438
+anchor_top = 1.0
+anchor_right = 0.871438
+anchor_bottom = 1.0
+offset_left = -100.16
+offset_top = -144.0
+offset_right = 99.8398
+offset_bottom = -98.0
+grow_horizontal = 0
+grow_vertical = 0
 theme = ExtResource("3_ohvov")
 text = "Back"
+metadata/_edit_use_anchors_ = true
 
 [node name="PauseMenu" type="Control" parent="." node_paths=PackedStringArray("background") groups=["PauseMenu"]]
 visible = false
@@ -513,3 +531,15 @@ theme = ExtResource("3_ohvov")
 theme_type_variation = &"LargePopupButton"
 text = "Confirm
 "
+
+[node name="CityScene" type="Control" parent="." groups=["CityScene"]]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("15_5aica")
+id = "play"
+
+[node name="City" parent="CityScene" instance=ExtResource("16_nb1pa")]

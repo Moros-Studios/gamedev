@@ -3,7 +3,7 @@ class_name MainMenu extends SMenuControl
 ## If TRUE, will ignore name in Game Title parameter and fetch name from the Project settings.
 @export var get_name_from_properties:bool = false
 ## Sets the text of the game title lavel on runtime. BBCode is supported.
-@export var game_title:String = "Game Title Here"
+@export var game_title:String = "Medieval Worldbuilding Game"
 ## Listing the menu buttons here will create buttons on runtime in the Main Menu. Pressing the button emits a signal (ButtonPressed) with the id listed here.
 @export var menu_options:Array[String] = []
 

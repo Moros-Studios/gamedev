@@ -22,6 +22,12 @@ Money_Manager="*res://scripts/money_manager.gd"
 UI="*res://addons/PackedUi/UI/UI.tscn"
 MessageDisplay="*res://scenes/ui/message_display.tscn"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"

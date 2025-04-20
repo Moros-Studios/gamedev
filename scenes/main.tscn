@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b35svq8q1w310"]
-
-[ext_resource type="PackedScene" uid="uid://dyid8mogk67rm" path="res://scenes/city/city.tscn" id="2_0wfyh"]
-
-[node name="main" type="Node2D"]
-
-[node name="City" parent="." instance=ExtResource("2_0wfyh")]

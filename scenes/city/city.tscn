@@ -1,7 +1,8 @@
-[gd_scene load_steps=24 format=4 uid="uid://dyid8mogk67rm"]
+[gd_scene load_steps=25 format=4 uid="uid://dyid8mogk67rm"]
 
 [ext_resource type="Texture2D" uid="uid://ct53bgek33ynj" path="res://assets/levels/kenney_medieval-rts/Tilesheet/medieval_tilesheet.png" id="1_hgaji"]
 [ext_resource type="Script" uid="uid://deuixi7n0lq4c" path="res://scripts/money_manager.gd" id="1_p3vyp"]
+[ext_resource type="Script" uid="uid://bphax120rb56d" path="res://scripts/city.gd" id="1_sdgcg"]
 [ext_resource type="Texture2D" uid="uid://dqpwq55c3nlwa" path="res://assets/levels/kenney_medieval-rts/Tilesheet/medieval_tilesheet - Copy.png" id="2_rm1g8"]
 [ext_resource type="Script" uid="uid://wq43iss2voo8" path="res://scripts/unlockables.gd" id="3_3443a"]
 [ext_resource type="Script" uid="uid://c622eiqc4tnor" path="res://scripts/houses.gd" id="3_odthu"]
@@ -9466,6 +9467,7 @@ sources/0 = SubResource("TileSetAtlasSource_nwxo4")
 size = Vector2(274, 208)
 
 [node name="City" type="Node2D"]
+script = ExtResource("1_sdgcg")
 metadata/_edit_horizontal_guides_ = [540.0, 0.0, 1020.0]
 metadata/_edit_vertical_guides_ = [960.0, 0.0, 1980.0]
 

@@ -7,6 +7,10 @@ signal start_game_pressed
 
 func _ready():
 	start_game_button.grab_focus()
+	self.connect("start_game_pressed", Callable(self, "_on_start_game_pressed"))
+
+func _on_start_game_pressed():
+	get_tree().change_scene_to_file("res://scenes/city/city.tscn")
 
 func quit():
 	get_tree().quit()

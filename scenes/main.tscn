@@ -1,7 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://b35svq8q1w310"]
 
-[ext_resource type="PackedScene" uid="uid://c7nly35ewn23c" path="res://addons/PackedUi/boot.tscn" id="1_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://dyid8mogk67rm" path="res://scenes/city/city.tscn" id="2_0wfyh"]
 
-[node name="Node2D" type="Node2D"]
+[node name="main" type="Node2D"]
 
-[node name="Boot" parent="." instance=ExtResource("1_0wfyh")]
+[node name="City" parent="." instance=ExtResource("2_0wfyh")]

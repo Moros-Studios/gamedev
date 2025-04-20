@@ -9588,8 +9588,8 @@ position = Vector2(33, -39)
 shape = SubResource("RectangleShape2D_qvd3e")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(965, 538)
-zoom = Vector2(0.5, 0.5)
+position = Vector2(962, 541)
+zoom = Vector2(0.9, 0.9)
 
 [node name="MoneyBar" parent="." instance=ExtResource("9_ag3m0")]
 offset_left = 1235.0

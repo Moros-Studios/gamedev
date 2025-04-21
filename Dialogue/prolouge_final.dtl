@@ -1,0 +1,47 @@
+[background arg="res://Dialogue/black.jpeg" fade="0.0" transition="Push Down"]
+[background fade="3.0" transition="Simple Fade"]
+join Guardian left
+Guardian: You got lucky.
+You frown and turn to the voice. You recognise the face from your dreams.
+join You right
+How is this lucky? I nearly died.
+He brushes you off.
+Guardian: You did die. Luckily, you had some gold on you and made it just close enough to the border for me to manifest and bring you back.
+Gold? You look at your satchel and realise the amount of gold is noticeably less.
+You: Did you steal my money?!
+You screech, rushing at him, but you move through him.
+Guardian: You nearly died, and that’s what you’re concerned about?\
+The gold was needed to bring you back. Magic demands sacrifice.
+You don’t really trust his word, but you accept the explanation.
+Guardian: Come on.
+He guides you through the kingdom. It feels wrong to call it that, given its desolate state. You reach a castle in ruins. Some parts of it are standing, whereas other parts are not.
+Guardian: Ok, I’ve told you most of what happened through your dreams, it took you too long to respond to my call, but I’ll forgive you.
+You: Wait! I don’t remember much of it.
+He examines you, and his eyes glow. You can swear your satchel gets lighter. Suddenly, everything comes flooding back, and your head hurts. You want to cry, but it feels like an inappropriate time.
+Guardian: There. You are now caught up.
+You: What? Hold on! I have so many questions. What were my parents like? How do I use this? What –
+He suddenly stops when you pull out the crystal.
+Guardian: How do you have -?
+He stops himself.
+Guardian: No. Nevermind. It does not matter. You cannot use it. It requires magic, which you do not have.
+But my mother could. Why not me?!
+He sighs.
+Guardian: There is a ceremony involved.
+You: So, let’s do it.
+Guardian: It is more complicated than you think. You need to be crowned by someone from your mother’s side of the family.
+Because they are dead.\
+It goes unspoken, but you can hear it.
+You: Okay, no magic. Anyway, this place is a mess.
+Guardian: Yes. It is why I called for you. I need your help to restore it. It is getting harder for the few residents left.
+You: What can I do? You’re the one with the powerful magic.
+Guardian: Like I said earlier, magic demands sacrifice. Selene’s noble sacrifice emptied out the treasury. Decades of wealth consumed in the blink of an eye.
+You: Why do I feel like you’re really sad about the money?
+He carries on, ignoring you.
+Guardian: In order for me to do anything, we will need gold. Lots of it. There are realms aside from our own. They are much smaller, but they produce a vast amount of gold and gemstones. Only those in my bloodline can enter normally. It will be dangerous, though.
+Guardian: The realms contain monsters, and you may encounter enemies like the one you faced today. Once an Elinhavn opens the realms, they will sense it.
+He looks at the crystal you brought.
+Guardian: I will tether myself to the crystal so that it can draw on my energy to manifest the armour. Also, while I’m tethered to it, I will be able to revive you when things go wrong.
+He looks directly at you, imposing. You get the feeling that you should be kneeling, bowing, or anything.
+{player_name}, Elinhavn. You inherited my name. The name of a once-powerful kingdom. Will you venture into the forgotten realms in order to rebuild this kingdom and restore the Elinhavn influence?
+You: I will.
+[background arg="res://Game title.png" fade="10.0"]

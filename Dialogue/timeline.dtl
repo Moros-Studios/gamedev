@@ -1,0 +1,287 @@
+Now witnessing a scene from the past.\
+The scenery before you is gruesome. You hear the faint sound of screams and weapons clashing. Amidst the growing chaos, a woman stands.
+In spite of her bloodshot eyes and stressed demeanour, there is something regal about her. She looks around frantically, searching for something or someone, cutting down any enemy that gets too close to her.
+She continues her path forward, seemingly disconnected from what is going on around her, until a knight pulls her back. She almost kills him immediately, stopping as clarity and recognition fill her eyes.
+join Queen left
+Queen: Sir Damian. Why are you here? And where is my child?
+join Damian right [mirrored="true"]
+Damian: My apologies, Your Majesty. I was asked to tell you to retreat.\
+The King has your child, and the Guardian insists we make our final stand in the throne room.
+She calms down a bit after hearing of her child’s safety, but remains concerned. She steps forward with determination.
+Queen: I understand. We must hurry.
+leave Queen
+leave Damian
+[background arg="res://Dialogue/black.jpeg" fade="3.0"]
+[background fade="3.0"]
+The scene shifts, and you are now viewing the inside of a large room. The woman and knight you previously saw are present, but so are another woman, a translucent man with a faint glow around him and a child.
+They all stand with grim looks on their faces except the child, who is currently sobbing. The queen walks to the child, embracing her in a hug. She attempts to calm the child down, and it seems to work. The sobbing slowly dies down. The other woman steps forward.
+join Ilira leftmost
+Ilira: Your Majesty, I’m so sorry. It’s my fault.\
+When we found the princess, Damian was meant to retrieve you while I guided her here safely.
+Before she can finish her sentence, she breaks down crying. Damian joins her on the floor, pulling her into a hug. The translucent man stares at them unimpressed. The Queen steels herself.
+join Queen rightmost [mirrored="true"]
+Queen: Charles knew what he was getting into.
+She breathes deeply before continuing.
+Queen: He might still be alive.
+Her words have the opposite of the intended effect. Both Ilira and the child in her arms immediately begin a new round of crying. The translucent man chuckles humourlessly, sparking the queen’s ire. She turns angrily, separating herself from the child in her arms, but before she can speak, he cuts her off.
+leave Ilira
+join Guardian leftmost
+Guardian: Your husband is de-
+Queen: You don’t know that!
+For the first time since the scene began, she raises her voice. He looks at her pitifully and glances back at Ilira.
+leave Queen
+Guardian: Tell her child...
+[wait time="3.0" skippable="true"]
+Ilira tries to speak but doesn’t get anywhere. The guardian scoffs.
+Guardian: A coward till the end, I suppose.
+Damian looks affronted on Ilira’s behalf.
+join Damian rightmost [mirrored="true"]
+Damian: This concerns her twin’s life. Must you be so callous?
+leave Damian
+The guardian ignores him and looks back at the queen.
+Guardian: Selene.
+He begins in a warmer tone.
+Guardian: Your husband took an arrow to the throat while they were retreating.
+A moment passes.
+[wait time="2.0"]
+Then another…
+[wait time="2.0"]
+And then the light behind the queen’s eyes fades, and then she wails.\
+After a few moments, she suddenly stops and turns accusingly at the Guardian.
+join Queen right
+Where were you? How could you let this happen?
+He looks mildly offended.
+Guardian: I was in the town, trying to save the few people you begged me to save. I didn’t know about any of this till the maid told me.
+Queen: Then you should’ve brought him back!
+She cries.
+Queen: You should’ve brought him back.
+He walks to her and tries to pat her, but his hand goes right through her. He looks at it briefly and grimaces.
+Guardian: You know I couldn’t, Selene. There are rules. While I may intervene to protect and even heal others, I can only bring my direct descendants back.
+He looks at her contemplatively and then sighs, having come to a decision.
+Guardian: Selene, you should leave.
+Queen: What?! No!
+He calmly walks to the end of the room and looks down through a window.
+Guardian: This has gone on far too long. The rest of your soldiers are dying off slowly. Soon we’ll be overrun, and the magic I have keeping the few survivors safe will be broken.
+Guardian: Leave this place with your child, Selene. They are creatures who seek to destroy the light. There is still much in the treasury. Perhaps, I can cast one more spell to vanquish them.
+Queen: I can’t.
+A new sense of clarity fills her, and she straightens. 
+Queen: You said it yourself. My people are dying. How could I turn away? Charles understood the importance of sacrifice, too. It is time I stopped acting like a child.
+Guardian: Selene you cannot. I know what you want to do. You will die and I will not be able to undo self-sacrificial magic.
+Queen: When I underwent my coronation and the ceremony to allow me to be a conduit of light, my oath was not just to rule this land, but also protect it. 
+Queen: If you give up your existence on the plane and you aren’t able to destroy all of them, we’ll be left in a more vulnerable position with no magic.
+Queen: However, if I perform the spell, offering up my life, it will be stronger. It would require energy from you and perhaps the entire treasury but at least you would be able to rebuild.
+Guardian: Think about this carefully, what about your child Selene? Would you leave her alone?
+Queen: She won’t be alone.
+The Queen turns to Damian and Ilira and you can see the tears in her eyes. She takes Ilira’s hands.
+update Queen leftmost [mirrored="true"]
+Queen: You’ll take care of her won’t you?
+Ilira moves to shake her head but Damian cuts in.
+join Damian right [mirrored="true"]
+Damian: Of course we will.
+The Queen goes to give her child one last hug. The child is confused but can understand that it is a serious moment. The Queen smiles at her.
+Queen: Your mother has some work to take care of. Do you think you could stay away with Sir Damian and Ilira for a while? I will meet up with you. Be good, okay?
+leave Damian
+join Princess rightmost [mirrored="true"]
+Princess: Yes mummy!
+She nods naively. Selene holds back her tears. She nods to Damian who steps forward to carry the child. Together with Ilira, they make their way out. She has no way of knowing if they will really be safe. All she can do is hope.  The Guardian breaks the silence.
+leave Princess
+join Guardian right
+Guardian: You can still leave. There is still time.
+She smiles sadly.
+Queen: You know I won’t.
+Guardian: You should have lived longer.
+Queen: I know.
+Guardian: I hoped you would live longer.
+Queen: I know.
+Guardian: You don’t have to die.
+Queen: I must.
+She has made her way unto her throne and smiles one last time.
+leave Guardian
+update Queen center
+Queen: You scared me a little as a child, but I enjoyed your company.
+She begins to speak in a language you don’t understand, and a bright light fills the area. You cannot see anything but you hear one last thing.
+leave Queen [animation="Fade Out" length="2.0"]
+[background arg="res://Dialogue/white.jpeg" fade="5.0"]
+Guardian: You were a good child.
+[background arg="res://Dialogue/black.jpeg" fade="5.0"]
+You wake up, tears streaming down your face but no memory of why.
+Your new life is about to begin, but first you must define yourself. Who are you?
+set {player_name} = ""
+[text_input text="What is your name?" var="player_name" placeholder="Lux"]
+Welcome {player_name}!
+join Ilira left
+Ilira: Hey sweetie, what’s  up?
+join You right
+You grimace and sit up.
+You: I just had a dream. It was sad – I think.\\
+I don’t remember what happened, but I think someone important died.
+What you don’t mention to her is that this is a recurring dream that has happened every year since your 16th birthday, and this is your fifth time seeing it. Despite never remembering the content, you wake up with the same feeling of dread each time and a faint feeling that someone is calling your name.\\
+Ilira purses her lips.
+Ilira: I see… Well, you should get ready and head out.\\
+Damian is back from his trip. He has something for you.
+You: Oh ok.
+Ilira: Oh, and {player_name}?
+You: Yes?
+Happy Birthday
+You: Medaase
+You feel excitement start to bubble up within you, and your dream is quickly forgotten.
+leave You
+leave Ilira
+[background arg="res://Dialogue/black.jpeg" fade="3.0" transition="Simple Fade"]
+[background fade="3.0"]
+You spot Damian outside. Armed, you notice. You groan.
+join You left
+You: Uncle Damian, please don’t tell me you plan to beat me up on my birthday.
+He rolls his eyes.
+join Damian right
+Damian: There will be no training today. I have been travelling for about three days.
+When he mentions it, you really pay attention. Noticing his bloodshot eyes and slightly scratched-up look.
+You: You look terrible.
+Damian: This is the thanks I get for retrieving your present.
+He tosses you something, and you catch it instinctively. You look down at your palm and see a crystal on a chain.
+You: Um thanks. It is really pretty?
+It really is, but it is strange for Damian to give you something like that. As if reading your mind, he speaks up.
+Damian: It’s armour.
+Then he adds more quietly.
+Damian: It was your mother’s.
+You clutch the necklace more tightly, your focus entirely on it.
+Damian: … and yes, it took a while to find.
+Damian stops, sensing you’re not paying attention.
+Damian: {player_name}, are you even paying attention?
+You bring your attention back to him.
+You: Um yeah. Yes, I was. So, how does it work?
+Damian shrugs.
+You feel your eye twitch.\\
+\\
+Damian adds joyfully.
+Damian: But you can figure it out. It’s part of the fun.
+A part of you wants to hit him, but a part of you is just thankful to have something from your mother, so you sigh. You toy with the necklace before putting it on.
+You: Thank you.
+He walks to you and rests an arm on your shoulder.
+Damian: Great, now let's get breakfast.
+leave You
+leave Damian
+You eat your breakfast, deep in thought about the item Damian gave you.
+join Ilira left
+Ilira: I have my own gift for you, you know?
+You look up, surprised.
+join You right
+You: Oh. I assumed it was a collaborative effort.
+She laughs lightly.
+Ilira: When Damian told me about his gift two months ago, I knew I couldn’t let him outdo me, so I went on a little mission of my own immediately. Come up to my room when you’re done, okay?
+You nod, eating faster.
+leave Ilira
+leave You
+When you walk in, you see Ilira on her bed with a scabbard on her lap. She looks at it sadly. When she notices you, she looks at you and motions for you to join her. You take a seat next to her.
+join Ilira center
+When Damian mentioned getting your armour, I figured you might appreciate a new sword.
+Then she pauses and reconsiders.
+Ilira: Well, it’s not exactly new, but it’s well-made and has never seen much real battle.
+She hands the sword to you. You take it.
+It was your father’s.
+She suddenly seems smaller.
+Ilira: It was one of the first swords our parents gave him when they decided he was done with his training.
+Ilira: Keep it. I was never any good with a sword.
+She tries to lighten the mood and smiles.
+At least I had a wicked aim with a bow.
+But there’s something darker about her tone. You’ve never seen her touch a bow, and the one time you did, she looked ready to throw up. Damian had taken her away and explained to you that she had witnessed something traumatic.
+You: Thank you. Really.
+You hug her. You both get up and make your way back downstairs.
+join You left
+You: So…I’ve been thinking.
+join Damian right
+A dangerous habit. (He quips)
+You: I want to visit the kingdom from which we came.
+Ilira and Damian exchange an uncomfortable glance.
+join Ilira rightmost
+Ilira: Are you sure?
+You nod. She tries again.
+Ilira: It’s a week of travel.
+Damian: Three days if you don’t rest and really beg the horse.
+She glares at him.
+You: I just want to learn more about my parents.
+Ilira: We can tell you more.
+You stare at her.
+Ilira: Fine.
+She relents.
+Ilira: It will take a while to prepare everything. Meals for the road. Lock up the house and the store –
+You cut her off.
+You: I want to move quickly. You guys can stay and prepare for a long-term trip, and meet up with me later or wait till I come back.
+There’s an urgency behind your voice. Something is driving you to return.
+Ilira: Are you crazy?! We can’t just send you off on your own.
+Damian: Ilira. Calm down and look at her.
+She pauses and looks at you. You don’t know what she sees, but she sighs.
+Ilira: Fine. But you leave in two days, not today. We need to pack up meals and clothes. And we’ll meet up with you when we sort things out here. You should be careful. Sometimes enemies roam the outskirts of the kingdom. Avoid them.
+You: I will.
+In the next two days, you have the dream again, which is strange. But even stranger, you start to remember some parts. Not much – white hair, a crying child – just bits. It only fuels your need to return.
+leave You
+leave Ilira
+leave Damian
+[background arg="res://Dialogue/black.jpeg" fade="3.0" transition="Simple Fade"]
+[background fade="3.0"]
+You’ve been travelling for seven days now. The dream hasn’t stopped happening. You can actually remember faces now, but not names or what happened.
+Ilira and Damian were there, but you can’t ask them about it. You’ve also been trying to figure out the armour, but have failed spectacularly. You are only about ten minutes away from your destination when you encounter a monster.
+It’s wolf-like but much larger than a wolf. It growls at you, and you can see the sharp rows of teeth. An armoured man walks in after it does. You feel some hope until he speaks.
+join Man left
+Did you really sense a trace of the Elinhavn bloodline?
+He looks at you. Your instincts scream at you to run.
+Man: This one? How pathetic.
+Before you can even process, you move out of the way as an arrow hits where you stood. He raises an eyebrow.
+Man: Ah, so you possess some talent.
+leave Man
+Whoever this man is, you instantly know that it will be dangerous for you if he is able to leave. Your best chance would be to close the distance, but the monster stands in your way. You draw your sword, and it leaps at you.
+You narrowly dodge it. It quickly recovers and takes a swipe at you. Your sword clashes with its claws, and you feel a burning pain in your shoulder. You turn and notice an arrow sticking out, and the man smirks. The brief distraction is enough for the monster to bite your stomach.
+You grit your teeth to keep yourself from screaming. Your shoulder is still burning, and you feel feverish. It is clear that the arrow is poisoned. Ignoring the usual protocol, you pull it out and stab the monster’s eye with it before it can take another bite out of you.
+You are vaguely aware of another arrow hitting you in the back, but you can’t pay too much attention to it. While the monster howls in pain, you slice its head off.
+The man frowns, moving to retreat, but adrenaline fuels you, and though it should be impossible, you close the distance and your sword goes through his chest.
+Finally, the pain becomes too unbearable, and you begin to sob. You make your way towards the town, but you succumb to your injuries at the outskirts.
+[background arg="res://Dialogue/white.jpeg" fade="3.0"]
+[wait time="5.0"]
+You wake up with a jolt, immediately confused. You look at your body; your wounds are gone. A part of you almost thinks it was a dream.
+[background arg="res://Dialogue/black.jpeg" fade="0.0" transition="Push Down"]
+[background fade="3.0" transition="Simple Fade"]
+join Guardian left
+Guardian: You got lucky.
+You frown and turn to the voice. You recognise the face from your dreams.
+join You right
+How is this lucky? I nearly died.
+He brushes you off.
+Guardian: You did die. Luckily, you had some gold on you and made it just close enough to the border for me to manifest and bring you back.
+Gold? You look at your satchel and realise the amount of gold is noticeably less.
+You: Did you steal my money?!
+You screech, rushing at him, but you move through him.
+Guardian: You nearly died, and that’s what you’re concerned about?\\
+The gold was needed to bring you back. Magic demands sacrifice.
+You don’t really trust his word, but you accept the explanation.
+Guardian: Come on.
+He guides you through the kingdom. It feels wrong to call it that, given its desolate state. You reach a castle in ruins. Some parts of it are standing, whereas other parts are not.
+Guardian: Ok, I’ve told you most of what happened through your dreams, it took you too long to respond to my call, but I’ll forgive you.
+You: Wait! I don’t remember much of it.
+He examines you, and his eyes glow. You can swear your satchel gets lighter. Suddenly, everything comes flooding back, and your head hurts. You want to cry, but it feels like an inappropriate time.
+Guardian: There. You are now caught up.
+You: What? Hold on! I have so many questions. What were my parents like? How do I use this? What –
+He suddenly stops when you pull out the crystal.
+Guardian: How do you have -?
+He stops himself.
+Guardian: No. Nevermind. It does not matter. You cannot use it. It requires magic, which you do not have.
+But my mother could. Why not me?!
+He sighs.
+Guardian: There is a ceremony involved.
+You: So, let’s do it.
+Guardian: It is more complicated than you think. You need to be crowned by someone from your mother’s side of the family.
+Because they are dead.\\
+It goes unspoken, but you can hear it.
+You: Okay, no magic. Anyway, this place is a mess.
+Guardian: Yes. It is why I called for you. I need your help to restore it. It is getting harder for the few residents left.
+You: What can I do? You’re the one with the powerful magic.
+Guardian: Like I said earlier, magic demands sacrifice. Selene’s noble sacrifice emptied out the treasury. Decades of wealth consumed in the blink of an eye.
+You: Why do I feel like you’re really sad about the money?
+He carries on, ignoring you.
+Guardian: In order for me to do anything, we will need gold. Lots of it. There are realms aside from our own. They are much smaller, but they produce a vast amount of gold and gemstones. Only those in my bloodline can enter normally. It will be dangerous, though.
+Guardian: The realms contain monsters, and you may encounter enemies like the one you faced today. Once an Elinhavn opens the realms, they will sense it.
+He looks at the crystal you brought.
+Guardian: I will tether myself to the crystal so that it can draw on my energy to manifest the armour. Also, while I’m tethered to it, I will be able to revive you when things go wrong.
+He looks directly at you, imposing. You get the feeling that you should be kneeling, bowing, or anything.
+{player_name}, Elinhavn. You inherited my name. The name of a once-powerful kingdom. Will you venture into the forgotten realms in order to rebuild this kingdom and restore the Elinhavn influence?
+You: I will.
+[background arg="res://Game title.png" fade="10.0"]

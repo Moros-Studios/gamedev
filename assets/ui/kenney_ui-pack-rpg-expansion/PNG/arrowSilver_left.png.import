@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8k6lrtikv0au"
-path="res://.godot/imported/arrowSilver_left.png-fa3f7650492d1131844ef6af1d0ef099.ctex"
+uid="uid://dtfcge7jqhkob"
+path="res://.godot/imported/arrowSilver_left.png-7e6516f91e7bbc4942d7138b3e798545.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_ui-pack-rpg-expansion/PNG/arrowSilver_left.png"
-dest_files=["res://.godot/imported/arrowSilver_left.png-fa3f7650492d1131844ef6af1d0ef099.ctex"]
+source_file="res://assets/ui/kenney_ui-pack-rpg-expansion/PNG/arrowSilver_left.png"
+dest_files=["res://.godot/imported/arrowSilver_left.png-7e6516f91e7bbc4942d7138b3e798545.ctex"]
 
 [params]
 

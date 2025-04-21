@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h7nvvcfrjy00"
-path="res://.godot/imported/sample.png-2504a5c47600cacfa3183684c577d0e0.ctex"
+uid="uid://dry6xpyv6wwtw"
+path="res://.godot/imported/sample.png-69a202f65cff2e6c719c8ef63dfa66a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_ui-pack-rpg-expansion/sample.png"
-dest_files=["res://.godot/imported/sample.png-2504a5c47600cacfa3183684c577d0e0.ctex"]
+source_file="res://assets/ui/kenney_ui-pack-rpg-expansion/sample.png"
+dest_files=["res://.godot/imported/sample.png-69a202f65cff2e6c719c8ef63dfa66a9.ctex"]
 
 [params]
 

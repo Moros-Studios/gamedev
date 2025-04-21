@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://baad77pyij24m"
-path="res://.godot/imported/barBack_horizontalLeft.png-6406c9407565e26c17b6be53a0d128fc.ctex"
+uid="uid://cdbbxppepcsni"
+path="res://.godot/imported/barBack_horizontalLeft.png-61e4c835f964545a2b3880dd7ca9bfd6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_ui-pack-rpg-expansion/PNG/barBack_horizontalLeft.png"
-dest_files=["res://.godot/imported/barBack_horizontalLeft.png-6406c9407565e26c17b6be53a0d128fc.ctex"]
+source_file="res://assets/ui/kenney_ui-pack-rpg-expansion/PNG/barBack_horizontalLeft.png"
+dest_files=["res://.godot/imported/barBack_horizontalLeft.png-61e4c835f964545a2b3880dd7ca9bfd6.ctex"]
 
 [params]
 

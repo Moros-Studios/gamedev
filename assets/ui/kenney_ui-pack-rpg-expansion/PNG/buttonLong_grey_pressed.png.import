@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cij6aolcuikv6"
-path="res://.godot/imported/buttonLong_grey_pressed.png-928869732b180f5ff02f552381f63403.ctex"
+uid="uid://bnlgr17o8u8x"
+path="res://.godot/imported/buttonLong_grey_pressed.png-c9c44763432e26e76d65cf10d35d7cf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_ui-pack-rpg-expansion/PNG/buttonLong_grey_pressed.png"
-dest_files=["res://.godot/imported/buttonLong_grey_pressed.png-928869732b180f5ff02f552381f63403.ctex"]
+source_file="res://assets/ui/kenney_ui-pack-rpg-expansion/PNG/buttonLong_grey_pressed.png"
+dest_files=["res://.godot/imported/buttonLong_grey_pressed.png-c9c44763432e26e76d65cf10d35d7cf4.ctex"]
 
 [params]
 

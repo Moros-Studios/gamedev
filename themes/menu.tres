@@ -1,9 +1,43 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://c2hsc8v50myw"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://c2hsc8v50myw"]
 
+[ext_resource type="Texture2D" uid="uid://d31gfiwl6kqqi" path="res://assets/ui/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_brown_pressed.png" id="1_pw0cd"]
+[ext_resource type="Texture2D" uid="uid://c4hj3hfdt4uaq" path="res://assets/ui/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_brown.png" id="1_rukvw"]
 [ext_resource type="Texture2D" uid="uid://dn66lycn6mf7o" path="res://assets/themes/Main.png" id="1_xavh1"]
+[ext_resource type="FontFile" uid="uid://dtmcfwplklvxe" path="res://assets/fonts/Silkscreen-Regular.ttf" id="2_rukvw"]
+[ext_resource type="Texture2D" uid="uid://dt4tpt581nvam" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0018.png" id="3_0mtrw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0mtrw"]
+texture = ExtResource("1_rukvw")
+texture_margin_left = 7.0
+texture_margin_top = 5.0
+texture_margin_right = 7.0
+texture_margin_bottom = 9.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cg3em"]
+texture = ExtResource("1_pw0cd")
+texture_margin_left = 8.0
+texture_margin_top = 5.0
+texture_margin_right = 7.0
+texture_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2yrsw"]
+texture = ExtResource("3_0mtrw")
+texture_margin_left = 10.0
+texture_margin_top = 10.0
+texture_margin_right = 10.0
+texture_margin_bottom = 10.0
+region_rect = Rect2(0, 0, 32, 32)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6tgry"]
 texture = ExtResource("1_xavh1")
 
 [resource]
+Button/fonts/font = ExtResource("2_rukvw")
+Button/styles/hover = SubResource("StyleBoxTexture_0mtrw")
+Button/styles/normal = SubResource("StyleBoxTexture_0mtrw")
+Button/styles/pressed = SubResource("StyleBoxTexture_cg3em")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 60
+Label/fonts/font = ExtResource("2_rukvw")
+Label/styles/normal = SubResource("StyleBoxTexture_2yrsw")
 Panel/styles/panel = SubResource("StyleBoxTexture_6tgry")

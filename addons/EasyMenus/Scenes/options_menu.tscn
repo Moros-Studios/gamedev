@@ -1,10 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://qlskttl1wjr7"]
+[gd_scene load_steps=11 format=3 uid="uid://qlskttl1wjr7"]
 
 [ext_resource type="Script" uid="uid://cr3dg5fnmkgw8" path="res://addons/EasyMenus/Scripts/options_menu_controller.gd" id="1_h6k46"]
+[ext_resource type="Texture2D" uid="uid://i546eybnimi7" path="res://assets/themes/Pause.png" id="2_621li"]
 [ext_resource type="Script" uid="uid://b8voe7r23pn8a" path="res://addons/EasyMenus/Scripts/follow_focus_center.gd" id="2_l3n3h"]
 [ext_resource type="PackedScene" uid="uid://dyfwp0vhgfjd7" path="res://addons/EasyMenus/Nodes/slider_w_labels.tscn" id="3_xghjq"]
 [ext_resource type="Script" uid="uid://b6k7xk1c1nf14" path="res://addons/EasyMenus/Scripts/option_button_input_propagator.gd" id="4_02jwa"]
+[ext_resource type="Theme" uid="uid://c2hsc8v50myw" path="res://themes/menu.tres" id="4_s3sox"]
 [ext_resource type="PackedScene" uid="uid://cqniig2ks0xs2" path="res://addons/EasyMenus/Nodes/gamepad_closable.tscn" id="5_k4nlh"]
+[ext_resource type="Theme" uid="uid://0lrl28kbe1tu" path="res://themes/menu_variation.tres" id="6_48152"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xeky8"]
+texture = ExtResource("2_621li")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x77mt"]
 
@@ -17,10 +23,24 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_h6k46")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xeky8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 440.0
+offset_top = 108.0
+offset_right = -453.0
+offset_bottom = 147.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 25
@@ -40,11 +60,20 @@ theme_override_constants/separation = 15
 
 [node name="OptionsTitle" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 45
+theme = ExtResource("4_s3sox")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
 text = "Options"
 horizontal_alignment = 1
 
+[node name="Control" type="Control" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
 [node name="HSeparator" type="HSeparator" parent="MarginContainer/ScrollContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_constants/separation = 10
 
@@ -62,6 +91,7 @@ layout_mode = 2
 title = "SFX Volume"
 
 [node name="Title" parent="MarginContainer/ScrollContainer/VBoxContainer/MarginContainer/VBoxContainer/SFXVolumeSlider" index="0"]
+theme = ExtResource("6_48152")
 text = "SFX Volume"
 
 [node name="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/MarginContainer/VBoxContainer/SFXVolumeSlider" index="1"]
@@ -74,6 +104,7 @@ layout_mode = 2
 title = "Music Volume"
 
 [node name="Title" parent="MarginContainer/ScrollContainer/VBoxContainer/MarginContainer/VBoxContainer/MusicVolumeSlider" index="0"]
+theme = ExtResource("6_48152")
 text = "Music Volume"
 
 [node name="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/MarginContainer/VBoxContainer/MusicVolumeSlider" index="1"]
@@ -89,6 +120,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("4_s3sox")
 theme_override_font_sizes/font_size = 25
 text = "Fullscreen"
 
@@ -98,6 +130,7 @@ custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 tooltip_text = "Syncs Games Frame Rate with Displays Refresh Rate"
+theme = ExtResource("4_s3sox")
 theme_override_font_sizes/font_size = 25
 text = "V-Sync"
 
@@ -113,6 +146,7 @@ Scale to more than 1 to improve image quality."
 
 [node name="RenderScaleLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/MarginContainer2/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("6_48152")
 theme_override_font_sizes/font_size = 25
 text = "Render Scale"
 horizontal_alignment = 1
@@ -144,6 +178,7 @@ theme_override_constants/separation = 10
 
 [node name="AntiAliasing2DLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/MarginContainer3/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("6_48152")
 theme_override_font_sizes/font_size = 25
 text = "2D Anti Aliasing"
 horizontal_alignment = 1
@@ -152,6 +187,7 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Smooth out edges of 2D objects"
+theme = ExtResource("6_48152")
 selected = 0
 item_count = 4
 popup/item_0/text = "Off"
@@ -168,6 +204,7 @@ script = ExtResource("4_02jwa")
 
 [node name="AntiAliasing3DLabel" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/MarginContainer3/VBoxContainer"]
 layout_mode = 2
+theme = ExtResource("6_48152")
 theme_override_font_sizes/font_size = 25
 text = "3D Anti Aliasing"
 horizontal_alignment = 1
@@ -176,6 +213,7 @@ horizontal_alignment = 1
 unique_name_in_owner = true
 layout_mode = 2
 tooltip_text = "Smooths out edges of 3D objects"
+theme = ExtResource("6_48152")
 selected = 0
 item_count = 4
 popup/item_0/text = "Off"
@@ -200,6 +238,7 @@ custom_minimum_size = Vector2(350, 0)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
+theme = ExtResource("4_s3sox")
 theme_override_font_sizes/font_size = 25
 text = "Back"
 

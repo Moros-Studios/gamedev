@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6y7cy1b7uybb"
-path="res://.godot/imported/barYellow_verticalTop.png-3e47785d97e453576917e5fc1c138e70.ctex"
+uid="uid://bvi7q2mql6hef"
+path="res://.godot/imported/barYellow_verticalTop.png-ab969a161068732bcde3473814a8b32a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://kenney_ui-pack-rpg-expansion/PNG/barYellow_verticalTop.png"
-dest_files=["res://.godot/imported/barYellow_verticalTop.png-3e47785d97e453576917e5fc1c138e70.ctex"]
+source_file="res://assets/ui/kenney_ui-pack-rpg-expansion/PNG/barYellow_verticalTop.png"
+dest_files=["res://.godot/imported/barYellow_verticalTop.png-ab969a161068732bcde3473814a8b32a.ctex"]
 
 [params]
 

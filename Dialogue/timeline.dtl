@@ -1,3 +1,4 @@
+[background arg="res://Dialogue/black.jpeg" fade="0.0"]
 Now witnessing a scene from the past.\
 The scenery before you is gruesome. You hear the faint sound of screams and weapons clashing. Amidst the growing chaos, a woman stands.
 In spite of her bloodshot eyes and stressed demeanour, there is something regal about her. She looks around frantically, searching for something or someone, cutting down any enemy that gets too close to her.
@@ -64,10 +65,10 @@ He calmly walks to the end of the room and looks down through a window.
 Guardian: This has gone on far too long. The rest of your soldiers are dying off slowly. Soon we’ll be overrun, and the magic I have keeping the few survivors safe will be broken.
 Guardian: Leave this place with your child, Selene. They are creatures who seek to destroy the light. There is still much in the treasury. Perhaps, I can cast one more spell to vanquish them.
 Queen: I can’t.
-A new sense of clarity fills her, and she straightens. 
+A new sense of clarity fills her, and she straightens.
 Queen: You said it yourself. My people are dying. How could I turn away? Charles understood the importance of sacrifice, too. It is time I stopped acting like a child.
 Guardian: Selene you cannot. I know what you want to do. You will die and I will not be able to undo self-sacrificial magic.
-Queen: When I underwent my coronation and the ceremony to allow me to be a conduit of light, my oath was not just to rule this land, but also protect it. 
+Queen: When I underwent my coronation and the ceremony to allow me to be a conduit of light, my oath was not just to rule this land, but also protect it.
 Queen: If you give up your existence on the plane and you aren’t able to destroy all of them, we’ll be left in a more vulnerable position with no magic.
 Queen: However, if I perform the spell, offering up my life, it will be stronger. It would require energy from you and perhaps the entire treasury but at least you would be able to rebuild.
 Guardian: Think about this carefully, what about your child Selene? Would you leave her alone?
@@ -113,11 +114,11 @@ join Ilira left
 Ilira: Hey sweetie, what’s  up?
 join You right
 You grimace and sit up.
-You: I just had a dream. It was sad – I think.\\
+You: I just had a dream. It was sad – I think.\\
 I don’t remember what happened, but I think someone important died.
-What you don’t mention to her is that this is a recurring dream that has happened every year since your 16th birthday, and this is your fifth time seeing it. Despite never remembering the content, you wake up with the same feeling of dread each time and a faint feeling that someone is calling your name.\\
+What you don’t mention to her is that this is a recurring dream that has happened every year since your 16th birthday, and this is your fifth time seeing it. Despite never remembering the content, you wake up with the same feeling of dread each time and a faint feeling that someone is calling your name.\\
 Ilira purses her lips.
-Ilira: I see… Well, you should get ready and head out.\\
+Ilira: I see… Well, you should get ready and head out.\\
 Damian is back from his trip. He has something for you.
 You: Oh ok.
 Ilira: Oh, and {player_name}?
@@ -151,8 +152,8 @@ Damian: {player_name}, are you even paying attention?
 You bring your attention back to him.
 You: Um yeah. Yes, I was. So, how does it work?
 Damian shrugs.
-You feel your eye twitch.\\
-\\
+You feel your eye twitch.\\
+\\
 Damian adds joyfully.
 Damian: But you can figure it out. It’s part of the fun.
 A part of you wants to hit him, but a part of you is just thankful to have something from your mother, so you sigh. You toy with the necklace before putting it on.
@@ -250,7 +251,7 @@ Guardian: You did die. Luckily, you had some gold on you and made it just close 
 Gold? You look at your satchel and realise the amount of gold is noticeably less.
 You: Did you steal my money?!
 You screech, rushing at him, but you move through him.
-Guardian: You nearly died, and that’s what you’re concerned about?\\
+Guardian: You nearly died, and that’s what you’re concerned about?\\
 The gold was needed to bring you back. Magic demands sacrifice.
 You don’t really trust his word, but you accept the explanation.
 Guardian: Come on.
@@ -269,7 +270,7 @@ He sighs.
 Guardian: There is a ceremony involved.
 You: So, let’s do it.
 Guardian: It is more complicated than you think. You need to be crowned by someone from your mother’s side of the family.
-Because they are dead.\\
+Because they are dead.\\
 It goes unspoken, but you can hear it.
 You: Okay, no magic. Anyway, this place is a mess.
 Guardian: Yes. It is why I called for you. I need your help to restore it. It is getting harder for the few residents left.
@@ -284,4 +285,8 @@ Guardian: I will tether myself to the crystal so that it can draw on my energy t
 He looks directly at you, imposing. You get the feeling that you should be kneeling, bowing, or anything.
 {player_name}, Elinhavn. You inherited my name. The name of a once-powerful kingdom. Will you venture into the forgotten realms in order to rebuild this kingdom and restore the Elinhavn influence?
 You: I will.
-[background arg="res://Game title.png" fade="10.0"]
+leave You
+leave Guardian
+[wait time="5.0"]
+[background arg="res://Game title.png" fade="3.0"]
+[end_timeline]

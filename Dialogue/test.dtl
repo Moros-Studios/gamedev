@@ -1,0 +1,4 @@
+{player_name}, Elinhavn. You inherited my name. The name of a once-powerful kingdom. Will you venture into the forgotten realms in order to rebuild this kingdom and restore the Elinhavn influence?
+You: I will.
+[background arg="res://Dialogue/black.jpeg" fade="0.0" transition="Swipe Right To Left"]
+[end_timeline]

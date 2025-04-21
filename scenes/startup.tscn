@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfmnx4qxhjd10"]
+
+[sub_resource type="GDScript" id="GDScript_crmxg"]
+script/source = "extends Node
+
+const MAIN_MENU_SCENE_PATH = \"res://addons/EasyMenus/Scenes/main_menu.tscn\"
+const PROLOGUE_TIMELINE = \"timeline\"
+
+var prologue_played = false
+var dialogic = null
+
+func _ready():
+	dialogic = get_node(\"/root/Dialogic\")
+	# Check if prologue has been played before
+	prologue_played = load_prologue_flag()
+	if prologue_played:
+		# If already played, go directly to main menu
+		go_to_main_menu()
+	else:
+		# Connect to Dialogic signal for timeline ended
+		dialogic.connect(\"timeline_ended\", Callable(self, \"_on_timeline_ended\"))
+		# Play the prologue timeline
+		dialogic.start_timeline(PROLOGUE_TIMELINE)
+
+func _on_timeline_ended():
+	# Mark prologue as played
+	save_prologue_flag(true)
+	# Disconnect signal
+	dialogic.disconnect(\"timeline_ended\", Callable(self, \"_on_timeline_ended\"))
+	# Go to main menu
+	go_to_main_menu()
+
+func go_to_main_menu():
+	get_tree().change_scene_to_file(MAIN_MENU_SCENE_PATH)
+
+func load_prologue_flag() -> bool:
+	var config = ConfigFile.new()
+	var err = config.load(\"user://prologue.cfg\")
+	if err == OK:
+		return config.get_value(\"prologue\", \"played\", false)
+	return false
+
+func save_prologue_flag(value: bool) -> void:
+	var config = ConfigFile.new()
+	config.load(\"user://prologue.cfg\")
+	config.set_value(\"prologue\", \"played\", value)
+	config.save(\"user://prologue.cfg\")
+"
+
+[node name="Startup" type="Node2D"]
+script = SubResource("GDScript_crmxg")

@@ -1,5 +1,4 @@
 [background arg="res://Dialogue/black.jpeg" fade="0.0" transition="Push Down"]
-[background fade="3.0" transition="Simple Fade"]
 join Guardian left
 Guardian: You got lucky.
 You frown and turn to the voice. You recognise the face from your dreams.
@@ -44,4 +43,7 @@ Guardian: I will tether myself to the crystal so that it can draw on my energy t
 He looks directly at you, imposing. You get the feeling that you should be kneeling, bowing, or anything.
 {player_name}, Elinhavn. You inherited my name. The name of a once-powerful kingdom. Will you venture into the forgotten realms in order to rebuild this kingdom and restore the Elinhavn influence?
 You: I will.
+join  center
 [background arg="res://Game title.png" fade="10.0"]
+do 
+[end_timeline]

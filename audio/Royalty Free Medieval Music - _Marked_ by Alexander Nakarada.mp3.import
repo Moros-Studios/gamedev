@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ceuxw7s21g4jr"
+path="res://.godot/imported/Royalty Free Medieval Music - _Marked_ by Alexander Nakarada.mp3-2284960869ec34162cff05de81de0494.mp3str"
+
+[deps]
+
+source_file="res://audio/Royalty Free Medieval Music - _Marked_ by Alexander Nakarada.mp3"
+dest_files=["res://.godot/imported/Royalty Free Medieval Music - _Marked_ by Alexander Nakarada.mp3-2284960869ec34162cff05de81de0494.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

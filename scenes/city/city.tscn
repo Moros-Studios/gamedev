@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dyid8mogk67rm"]
+[gd_scene load_steps=27 format=4 uid="uid://dyid8mogk67rm"]
 
 [ext_resource type="Texture2D" uid="uid://ct53bgek33ynj" path="res://assets/levels/kenney_medieval-rts/Tilesheet/medieval_tilesheet.png" id="1_hgaji"]
 [ext_resource type="Script" uid="uid://deuixi7n0lq4c" path="res://scripts/money_manager.gd" id="1_p3vyp"]
@@ -10,8 +10,9 @@
 [ext_resource type="Script" uid="uid://cgsvsry22fb0e" path="res://scripts/unlock.gd" id="4_4tn13"]
 [ext_resource type="PackedScene" uid="uid://tjr2agei4ucq" path="res://scenes/city/blacksmith.tscn" id="5_8qd41"]
 [ext_resource type="PackedScene" uid="uid://c21iomngrxnaf" path="res://scenes/city/training_center.tscn" id="6_0uesa"]
-[ext_resource type="PackedScene" uid="uid://l1tyirn81gon" path="res://scenes/ui/money.tscn" id="9_ag3m0"]
+[ext_resource type="PackedScene" uid="uid://l1tyirn81gon" path="res://ui/money.tscn" id="9_ag3m0"]
 [ext_resource type="Theme" uid="uid://c2hsc8v50myw" path="res://themes/menu.tres" id="12_y8voe"]
+[ext_resource type="AudioStream" uid="uid://befxw2ec0me8n" path="res://audio/Pokémon Center - Pokémon Let's Go Pikachu and Let's Go Eevee OST (Gamerip).mp3" id="13_qd5ty"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_is4qb"]
 texture = ExtResource("1_hgaji")
@@ -9607,3 +9608,9 @@ offset_right = 404.0
 offset_bottom = 1085.0
 theme = ExtResource("12_y8voe")
 text = "PLAY!"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_qd5ty")
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

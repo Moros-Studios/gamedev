@@ -1,7 +1,7 @@
 extends Node
 class_name MoneyManager
 
-@export var starting_money: int = 800
+@export var starting_money: int = 200
 var current_money: int
 
 signal money_changed(amount: int)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://d234r4a7e2ta3"]
 
 [ext_resource type="Script" uid="uid://bqbl8e5wt51o4" path="res://scripts/message_display.gd" id="1_w1wbo"]
-[ext_resource type="Theme" uid="uid://5c0frflud0pu" path="res://scenes/ui/new_theme.tres" id="2_4qbpv"]
+[ext_resource type="Theme" uid="uid://0lrl28kbe1tu" path="res://themes/menu_variation.tres" id="2_4qbpv"]
 
 [node name="MessageDisplay" type="Control"]
 z_index = 2

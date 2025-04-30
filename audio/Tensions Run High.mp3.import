@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxov21q35nd78"
+path="res://.godot/imported/Tensions Run High.mp3-d5308929d73cd9cfb1735edc741aa716.mp3str"
+
+[deps]
+
+source_file="res://audio/Tensions Run High.mp3"
+dest_files=["res://.godot/imported/Tensions Run High.mp3-d5308929d73cd9cfb1735edc741aa716.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

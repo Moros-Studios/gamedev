@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dq6tvhqcy2aps"]
+[gd_scene load_steps=5 format=3 uid="uid://dq6tvhqcy2aps"]
 
 [ext_resource type="Script" uid="uid://5xgyj7oh4yq" path="res://addons/EasyMenus/Scripts/main_menu_controller.gd" id="1_lbw7r"]
 [ext_resource type="Theme" uid="uid://c2hsc8v50myw" path="res://themes/menu.tres" id="2_f4gee"]
 [ext_resource type="PackedScene" uid="uid://qlskttl1wjr7" path="res://addons/EasyMenus/Scenes/options_menu.tscn" id="2_pwqpr"]
+[ext_resource type="AudioStream" uid="uid://ceuxw7s21g4jr" path="res://audio/Royalty Free Medieval Music - _Marked_ by Alexander Nakarada.mp3" id="4_bcxwf"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -28,10 +29,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -327.0
-offset_top = 360.0
-offset_right = 327.0
-offset_bottom = 653.0
+offset_left = -337.0
+offset_top = 278.0
+offset_right = 317.0
+offset_bottom = 1006.0
 grow_horizontal = 2
 theme_override_constants/separation = 15
 metadata/_edit_group_ = true
@@ -109,6 +110,10 @@ text = "Quit"
 unique_name_in_owner = true
 visible = false
 layout_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_bcxwf")
+autoplay = true
 
 [connection signal="pressed" from="Content/PrologueButton" to="." method="_on_start_game_button_pressed"]
 [connection signal="pressed" from="Content/PrologueButton" to="." method="_on_prologue_button_pressed"]

@@ -1,12 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://l1tyirn81gon"]
+[gd_scene load_steps=14 format=3 uid="uid://l1tyirn81gon"]
 
-[ext_resource type="Theme" uid="uid://5c0frflud0pu" path="res://scenes/ui/new_theme.tres" id="1_hkxbf"]
-[ext_resource type="Texture2D" uid="uid://dbo010qdstwie" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0046.png" id="2_xf2lk"]
-[ext_resource type="Texture2D" uid="uid://rvtu6sjq3fas" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0047.png" id="3_iytp5"]
-[ext_resource type="Texture2D" uid="uid://b842r0ec3ujj8" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0059.png" id="4_uhawy"]
-[ext_resource type="Texture2D" uid="uid://cp5brxf8hsm43" path="res://assets/ui/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0060.png" id="5_nx7jh"]
-[ext_resource type="Texture2D" uid="uid://dbx3uux3yk008" path="res://scenes/ui/Coin.png" id="6_lkdjs"]
+[ext_resource type="Theme" uid="uid://5c0frflud0pu" path="res://ui/new_theme.tres" id="1_hkxbf"]
+[ext_resource type="Texture2D" uid="uid://dbo010qdstwie" path="res://ui/assets/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0046.png" id="2_xf2lk"]
+[ext_resource type="Texture2D" uid="uid://rvtu6sjq3fas" path="res://ui/assets/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0047.png" id="3_iytp5"]
+[ext_resource type="Texture2D" uid="uid://b842r0ec3ujj8" path="res://ui/assets/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0059.png" id="4_uhawy"]
+[ext_resource type="Texture2D" uid="uid://cp5brxf8hsm43" path="res://ui/assets/kenney_ui-pack-pixel-adventure/Tiles/Large tiles/Thick outline/tile_0060.png" id="5_nx7jh"]
+[ext_resource type="Texture2D" uid="uid://dbx3uux3yk008" path="res://ui/Coin.png" id="6_lkdjs"]
 [ext_resource type="Script" uid="uid://cnb7m8eh38t14" path="res://scripts/money_bar.gd" id="7"]
+[ext_resource type="FontFile" uid="uid://j4agnopltlih" path="res://Fonts/Pixel Game.otf" id="8_jrndw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hkxbf"]
 bg_color = Color(0.103636, 0.151825, 0.179504, 1)
@@ -92,10 +93,12 @@ texture = ExtResource("6_lkdjs")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 82.0
-offset_top = 29.0
-offset_right = 272.0
-offset_bottom = 52.0
+offset_left = 81.0
+offset_top = 16.0
+offset_right = 160.0
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource("8_jrndw")
+theme_override_font_sizes/font_size = 30
 text = "0000"
 horizontal_alignment = 1
 vertical_alignment = 1

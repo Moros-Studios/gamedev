@@ -1,4 +1,5 @@
-[background arg="res://Dialogue/black.jpeg" fade="0.0"]
+audio music "res://audio/Heartbeat - Royalty Free Fantasy Music.mp3" [sync="music"]
+[background arg="res://Dialogue/war torn background (opening scene).png" fade="0.0"]
 Now witnessing a scene from the past.\
 The scenery before you is gruesome. You hear the faint sound of screams and weapons clashing. Amidst the growing chaos, a woman stands.
 In spite of her bloodshot eyes and stressed demeanour, there is something regal about her. She looks around frantically, searching for something or someone, cutting down any enemy that gets too close to her.
@@ -13,7 +14,6 @@ Queen: I understand. We must hurry.
 leave Queen
 leave Damian
 [background arg="res://Dialogue/black.jpeg" fade="3.0"]
-[background fade="3.0"]
 The scene shifts, and you are now viewing the inside of a large room. The woman and knight you previously saw are present, but so are another woman, a translucent man with a faint glow around him and a child.
 They all stand with grim looks on their faces except the child, who is currently sobbing. The queen walks to the child, embracing her in a hug. She attempts to calm the child down, and it seems to work. The sobbing slowly dies down. The other woman steps forward.
 join Ilira leftmost
@@ -74,6 +74,7 @@ Queen: However, if I perform the spell, offering up my life, it will be stronger
 Guardian: Think about this carefully, what about your child Selene? Would you leave her alone?
 Queen: She won’t be alone.
 The Queen turns to Damian and Ilira and you can see the tears in her eyes. She takes Ilira’s hands.
+leave Guardian
 update Queen leftmost [mirrored="true"]
 Queen: You’ll take care of her won’t you?
 Ilira moves to shake her head but Damian cuts in.
@@ -81,6 +82,7 @@ join Damian right [mirrored="true"]
 Damian: Of course we will.
 The Queen goes to give her child one last hug. The child is confused but can understand that it is a serious moment. The Queen smiles at her.
 Queen: Your mother has some work to take care of. Do you think you could stay away with Sir Damian and Ilira for a while? I will meet up with you. Be good, okay?
+[background arg="res://Dialogue/throne.jpeg" fade="0.0"]
 leave Damian
 join Princess rightmost [mirrored="true"]
 Princess: Yes mummy!
@@ -104,7 +106,8 @@ She begins to speak in a language you don’t understand, and a bright light fil
 leave Queen [animation="Fade Out" length="2.0"]
 [background arg="res://Dialogue/white.jpeg" fade="5.0"]
 Guardian: You were a good child.
-[background arg="res://Dialogue/black.jpeg" fade="5.0"]
+[background arg="res://Dialogue/bedroom scene.png" fade="5.0"]
+audio music "res://audio/Royalty Free Medieval Music - _Marked_ by Alexander Nakarada.mp3" [sync="music"]
 You wake up, tears streaming down your face but no memory of why.
 Your new life is about to begin, but first you must define yourself. Who are you?
 set {player_name} = ""
@@ -128,8 +131,7 @@ You: Medaase
 You feel excitement start to bubble up within you, and your dream is quickly forgotten.
 leave You
 leave Ilira
-[background arg="res://Dialogue/black.jpeg" fade="3.0" transition="Simple Fade"]
-[background fade="3.0"]
+[background arg="res://Dialogue/Outside.jpeg" fade="3.0" transition="Simple Fade"]
 You spot Damian outside. Armed, you notice. You groan.
 join You left
 You: Uncle Damian, please don’t tell me you plan to beat me up on my birthday.
@@ -173,6 +175,7 @@ Ilira: When Damian told me about his gift two months ago, I knew I couldn’t le
 You nod, eating faster.
 leave Ilira
 leave You
+[background arg="res://Dialogue/bedroom scene.png" fade="0.0"]
 When you walk in, you see Ilira on her bed with a scabbard on her lap. She looks at it sadly. When she notices you, she looks at you and motions for you to join her. You take a seat next to her.
 join Ilira center
 When Damian mentioned getting your armour, I figured you might appreciate a new sword.
@@ -188,6 +191,7 @@ At least I had a wicked aim with a bow.
 But there’s something darker about her tone. You’ve never seen her touch a bow, and the one time you did, she looked ready to throw up. Damian had taken her away and explained to you that she had witnessed something traumatic.
 You: Thank you. Really.
 You hug her. You both get up and make your way back downstairs.
+[background arg="res://Dialogue/Outside.jpeg" fade="0.0"]
 join You left
 You: So…I’ve been thinking.
 join Damian right
@@ -218,8 +222,8 @@ In the next two days, you have the dream again, which is strange. But even stran
 leave You
 leave Ilira
 leave Damian
-[background arg="res://Dialogue/black.jpeg" fade="3.0" transition="Simple Fade"]
-[background fade="3.0"]
+[background arg="res://Dialogue/Forest.jpeg" fade="3.0" transition="Simple Fade"]
+audio music "res://audio/Tensions Run High.mp3" [sync="music"]
 You’ve been travelling for seven days now. The dream hasn’t stopped happening. You can actually remember faces now, but not names or what happened.
 Ilira and Damian were there, but you can’t ask them about it. You’ve also been trying to figure out the armour, but have failed spectacularly. You are only about ten minutes away from your destination when you encounter a monster.
 It’s wolf-like but much larger than a wolf. It growls at you, and you can see the sharp rows of teeth. An armoured man walks in after it does. You feel some hope until he speaks.
@@ -239,8 +243,7 @@ Finally, the pain becomes too unbearable, and you begin to sob. You make your wa
 [background arg="res://Dialogue/white.jpeg" fade="3.0"]
 [wait time="5.0"]
 You wake up with a jolt, immediately confused. You look at your body; your wounds are gone. A part of you almost thinks it was a dream.
-[background arg="res://Dialogue/black.jpeg" fade="0.0" transition="Push Down"]
-[background fade="3.0" transition="Simple Fade"]
+[background arg="res://Dialogue/Forest.jpeg" fade="0.0" transition="Push Down"]
 join Guardian left
 Guardian: You got lucky.
 You frown and turn to the voice. You recognise the face from your dreams.
@@ -287,6 +290,5 @@ He looks directly at you, imposing. You get the feeling that you should be kneel
 You: I will.
 leave You
 leave Guardian
-[wait time="5.0"]
-[background arg="res://Game title.png" fade="3.0"]
+[background arg="res://Game title.png" fade="0.0"]
 [end_timeline]

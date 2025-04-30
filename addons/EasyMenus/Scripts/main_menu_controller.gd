@@ -9,6 +9,7 @@ signal prologue_pressed
 
 func _ready():
 	start_game_button.grab_focus()
+	get_tree().root.content_scale_mode = Window.CONTENT_SCALE_MODE_DISABLED
 	self.connect("start_game_pressed", Callable(self, "_on_start_game_pressed"))
 	#prologue_button.grab_focus()
 	self.connect("prologue_pressed", Callable(self, "_on_prologue_pressed"))
@@ -17,9 +18,9 @@ func _on_start_game_pressed():
 	get_tree().change_scene_to_file("res://scenes/city/city.tscn")
 	
 func _on_prologue_pressed():
-	#Dialogic.start("res://Dialogue/timeline.dtl")
+	Dialogic.start("res://Dialogue/timeline.dtl")
 	#Dialogic.start("res://Dialogue/prolouge_final.dtl")
-	Dialogic.start("res://Dialogue/test.dtl")
+	#Dialogic.start("res://Dialogue/test.dtl")
 
 func quit():
 	get_tree().quit()
